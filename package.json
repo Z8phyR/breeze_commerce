@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.3.0",
@@ -10,10 +11,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "NODE_ENV=test mocha --file test/setup.js test/**/*.test.js --exit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  }
 }
