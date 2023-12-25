@@ -4,8 +4,24 @@ const jwt = require('jsonwebtoken');
 const router = express.Router();
 require('dotenv/config');
 
+const { User } = require('../database/database');
 
-const {User} = require('../database/database');
+// Middleware for Protected Routes
+const verifyToken = (req, res, next) => {
+    const token = req.header('Authorization');
+    // console.log('Token:', token); // Log the received token
+    if (!token) return res.status(401).json({ message: 'Access Denied' });
+
+    try {
+        const verified = jwt.verify(token, process.env.JWT_TOKEN);
+        // console.log('Verified:', verified); // Log the verification result
+        req.user = verified;
+        next();
+    } catch (err) {
+        // console.log('Verification Error:', err); // Log any error
+        res.status(401).json({ message: 'Invalid Token' }); // Change to 401
+    }
+};
 
 //User registration
 router.post('/register', async(req, res) => {
@@ -36,16 +52,6 @@ router.get('/', async(req, res) => {
     }
 });
 
-//Get a specific user by id
-router.get('/:userId', async(req, res) => {
-    try {
-        const user = await User.findById(req.params.userId);
-        res.json(user);
-    } catch (err) {
-        res.json({ message: err });
-
-    }
-});
 
 //Update a specific user by id
 router.put('/:userId', async(req, res) => {
@@ -71,43 +77,57 @@ router.delete('/:userId', async(req, res) => {
 });
 
 
-
-
-
-
-
 //User login
 router.post('/login', async(req, res) => {
     try {
         const user = await User.findOne({ email: req.body.email });
-        if (user && await bcrypt.compare(req.body.password,user.password)) {
-            const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET, { expiresIn: '1h' });
-            res.header('auth-token', token).send(token);
-        }
-        else {
-            res.status(400).send('Invalid credentials');
+        if (user && await bcrypt.compare(req.body.password, user.password)) {
+            const token = jwt.sign({ _id: user._id }, process.env.JWT_TOKEN, { expiresIn: '1h' });
+            console.log('User logged in');
+            res.json({ token: token }); // Respond with JSON
+        } else {
+            console.log('Invalid credentials')
+            res.status(400).json({ message: 'Invalid credentials' });
         }
     } catch (err) {
-        res.status(400).send('Invalid credentials');
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
+//User logout
+router.post('/logout', async(req, res) => {
+    try {
+        res.json({ message: 'User logged out' });
+        res.redirect('/');
+        res.clearCookie('token');
+        localStorage.removeItem('token');
+        console.log('User logged out');
+    } catch (err) {
+        res.json({ message: err });
+    }
+});
+
+//User profile
+router.get('/profile', verifyToken, async(req, res) => {
+    try {
+        const user = await User.findById(req.user._id);
+        res.json(user);
+    } catch (err) {
+        res.json({ message: err });
     }
 });
 
 
-
-
-
-// Middleware for Protected Routes
-const verifyToken = (req, res, next) => {
-    const token = req.header('auth-token');
-    if (!token) return res.status(401).send('Access Denied');
+//Get a specific user by id
+router.get('/:userId', async(req, res) => {
     try {
-        const verified = jwt.verify(token, process.env.TOKEN_SECRET);
-        req.user = verified;
-        next();
+        const user = await User.findById(req.params.userId);
+        res.json(user);
+    } catch (err) {
+        res.json({ message: err });
+
     }
-    catch (err) {
-        res.status(400).send('Invalid Token');
-    }
-}
+});
+
 
 module.exports = router;

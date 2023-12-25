@@ -29,6 +29,7 @@ const reviewSchema = new mongoose.Schema({
   productId: String,
   userId: String,
   review: String,
+  rating: Number,
 });
 
 const Product = mongoose.model("Product", productSchema);

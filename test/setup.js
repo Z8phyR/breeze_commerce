@@ -1,6 +1,4 @@
 const mongoose = require("mongoose");
-const config = require("../config");
-const { expect } = require("chai");
 
 // Clear specified collections before each test
 beforeEach((done) => {
@@ -11,7 +9,8 @@ beforeEach((done) => {
   );
 
   Promise.all(clearPromises)
-    .then(() => done())
+  // .then(console.log("[✅️] Cleared collections before each test"))  
+  .then(() => done())
     .catch((error) => console.error("[❌️]Error clearing collections:", error));
 });
 
