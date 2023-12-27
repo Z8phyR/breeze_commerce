@@ -97,15 +97,22 @@ router.post('/login', async(req, res) => {
 //User logout
 router.post('/logout', async(req, res) => {
     try {
-        res.json({ message: 'User logged out' });
-        res.redirect('/');
+        // Clear the cookie named 'token'
         res.clearCookie('token');
-        localStorage.removeItem('token');
+
+        // Optionally, add a console log for server-side logging
         console.log('User logged out');
+
+        // Send a response to the client
+        res.json({ message: 'User logged out' });
+
+        // Do not attempt to send any more responses after this point
     } catch (err) {
-        res.json({ message: err });
+        // Send an error response if there's an exception
+        res.status(500).json({ message: err.message });
     }
 });
+
 
 //User profile
 router.get('/profile', verifyToken, async(req, res) => {
@@ -117,6 +124,7 @@ router.get('/profile', verifyToken, async(req, res) => {
     }
 });
 
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiOGJlMDc0YmUxOTUxODJiNWY0OTEiLCJpYXQiOjE3MDM2NDUyMTAsImV4cCI6MTcwMzY0ODgxMH0.yzg32iJ9uxmzFuGZzwZplgk8zZhCMKJL2SYq4LrZP2s"
 
 //Get a specific user by id
 router.get('/:userId', async(req, res) => {
