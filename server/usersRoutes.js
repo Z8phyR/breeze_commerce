@@ -124,8 +124,6 @@ router.get('/profile', verifyToken, async(req, res) => {
     }
 });
 
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiOGJlMDc0YmUxOTUxODJiNWY0OTEiLCJpYXQiOjE3MDM2NDUyMTAsImV4cCI6MTcwMzY0ODgxMH0.yzg32iJ9uxmzFuGZzwZplgk8zZhCMKJL2SYq4LrZP2s"
-
 //Get a specific user by id
 router.get('/:userId', async(req, res) => {
     try {

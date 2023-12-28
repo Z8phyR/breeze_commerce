@@ -1,7 +1,14 @@
 require('../database/connect');
 const express = require('express');
 const app = express();
+const cors = require('cors');
 
+app.use(cors(
+  {
+    origin: 'http://localhost:4200',
+    credentials: true
+  }
+));
 app.use(express.json());
 
 const productsRoutes = require('./productsRoutes');

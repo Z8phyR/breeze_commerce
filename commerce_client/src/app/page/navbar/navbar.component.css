@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Judson:ital,wght@0,400;0,700;1,400&family=Kaushan+Script&display=swap');
+
+
+.logo {
+color: #010C01;
+ font-size: 64px;
+ font-family: Italianno;
+ font-weight: 400;
+ word-wrap: break-word
+
+}
+
+.cart {
+color: #508A52;
+ font-size: 24px;
+ font-family: Judson;
+ font-weight: 400;
+ word-wrap: break-word;
+ /* padding: 15px; */
+}
+
+button.cart {
+    background-color: #011D02;
+    border-radius: 25px;
+    color: #508A52;
+    font-size: 24px;
+    font-family: Judson;
+    font-weight: 400;
+    word-wrap: break-word; 
+    padding: 10px 25px 10px 25px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.navbar {
+    background-color: #508A52;
+    height: 137px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+
+}
+
+ul {
+    padding: 20px;
+}
+
+ul > li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    transition: transform 0.3s ease-in-out; /* Apply transition to the normal state */
+    vertical-align: middle;
+}
+
+li.nav-item > a  {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    font-family: Judson;
+    font-weight: 400;
+    word-wrap: break-word;
+    display: block;
+
+}
+
+
+ul > li:hover {
+    color:#010C01;
+    transform: scale(1.075); /* Scale on hover */
+}
+
+
+ 
