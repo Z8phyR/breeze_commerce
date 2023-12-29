@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.profile {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.profile h2, .profile p {
+    text-align: center;
+}

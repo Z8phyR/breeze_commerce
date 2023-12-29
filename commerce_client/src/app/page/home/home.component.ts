@@ -9,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor() { }
+
+  image1 = "/assets/commerce_home1.jpg"
+  image2 = "/assets/commerce_home2.jpg"
+
+
+
 }

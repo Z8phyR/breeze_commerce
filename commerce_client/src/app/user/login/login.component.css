@@ -13,8 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px 20px 20px;
-
+    padding: 0 20px 20px 20px; 
 }
 
 .login-header {
@@ -48,6 +47,7 @@
     background-color: #507C3A; /* Match the header */
     color: white;
     margin-bottom: 15px; /* Space below the button */
+    cursor: pointer;
 }
 
 .login-form a {
@@ -57,3 +57,13 @@
     text-align: center;
     margin-top: 15px; /* Space above the link */
 }
+
+
+.login-background {
+    background-image: url('/assets/Commerce_img1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+  }

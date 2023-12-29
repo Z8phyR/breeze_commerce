@@ -28,6 +28,9 @@
 .product-image {
     /* Set common styles for your product images */
     border-radius: 0%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
 }
 
 .product-description {
