@@ -1,1 +1,18 @@
-<p>register works!</p>
+<!-- Register Component-->
+<div class="login-background">
+
+    <div class="login-form">
+      <div class="login-header">
+        <h2>Register to become a Member of the Breeze!</h2>
+      </div>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <input type="text" formControlName="username" placeholder="Username">
+        <input type="text" formControlName="firstName" placeholder="First Name">
+        <input type="text" formControlName="lastName" placeholder="Last Name">
+        <input type="email" formControlName="email" placeholder="Email">
+        <input type="password" formControlName="password" placeholder="Password">
+        <button type="submit" [disabled]="!registerForm.valid">Register</button>
+      </form>
+    </div>
+    
+    </div>  

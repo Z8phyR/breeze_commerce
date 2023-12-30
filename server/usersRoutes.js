@@ -28,7 +28,11 @@ router.post('/register', async(req, res) => {
     try {
         const hashedPassword = bcrypt.hashSync(req.body.password, 10);
         const user = new User( {
-            ...req.body,
+            // ...req.body,
+            username: req.body.username.toLowerCase(), // Convert username to lowercase
+            firstName: req.body.firstName.charAt(0).toUpperCase() + req.body.firstName.slice(1),
+            lastName: req.body.lastName.charAt(0).toUpperCase() + req.body.lastName.slice(1),
+            email: req.body.email,
             password: hashedPassword
         });
         const savedUser = await user.save();
@@ -80,7 +84,11 @@ router.delete('/:userId', async(req, res) => {
 //User login
 router.post('/login', async(req, res) => {
     try {
-        const user = await User.findOne({ email: req.body.email });
+        
+        // const user = await User.findOne({ email: req.body.email });
+        // use username instead of email
+        const user = await User.findOne({ username: req.body.username });
+        
         if (user && await bcrypt.compare(req.body.password, user.password)) {
             const token = jwt.sign({ _id: user._id }, process.env.JWT_TOKEN, { expiresIn: '1h' });
             console.log('User logged in');

@@ -9,7 +9,9 @@ const productSchema = new mongoose.Schema({
 
 
 const userSchema = new mongoose.Schema({
-  name: String,
+  username: String,
+  firstName: String,
+  lastName: String,
   email: String,
   password: String,
 });

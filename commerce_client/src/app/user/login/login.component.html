@@ -6,7 +6,7 @@
     <h2>Member Login</h2>
   </div>
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <input type="email" formControlName="email" placeholder="Email">
+    <input type="text" formControlName="username" placeholder="Username">
     <input type="password" formControlName="password" placeholder="Password">
     <button type="submit" [disabled]="!loginForm.valid">Login</button>
   </form>

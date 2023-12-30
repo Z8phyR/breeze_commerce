@@ -18,12 +18,12 @@ export class LoginComponent {
   constructor(private usersService: UsersService, private router: Router) { }
   
   loginForm = new FormGroup({
-    email: new FormControl('', [Validators.required, Validators.email]),
+    username: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required)
   });
 
   errorMessage(): any{
-    if (this.loginForm.controls.email.hasError('required')) {
+    if (this.loginForm.controls.username.hasError('required')) {
       return 'You must enter a value';
     }
   }
@@ -34,8 +34,13 @@ export class LoginComponent {
 
   onSubmit() {
     if (this.loginForm.valid) {
-      const { email, password } = this.loginForm.value;
-      this.usersService.login({ email: email || '', password: password || '' }).subscribe(
+      // const { username, password } = this.loginForm.value;
+      // obtain username and password and convert username to lower case
+      const username = this.loginForm.value.username?.toLowerCase();
+      const password = this.loginForm.value.password;
+
+
+      this.usersService.login({ username: username || '', password: password || '' }).subscribe(
         token => {
           console.log(token);
           localStorage.setItem('token', token.token);
