@@ -36,13 +36,25 @@ export class RegisterComponent {
 
   onSubmit() {
     if (this.registerForm.valid) {
-      const { username, firstName,lastName, email, password } = this.registerForm.value;
+      const { username, 
+              firstName,
+              lastName, 
+              email, 
+              password 
+            } = this.registerForm.value;
       this.usersService.register({ username: username || '', firstName: firstName || '', lastName: lastName || '', email: email || '', password: password || '' }).subscribe(
         data => {
           console.log(data);
+          // confirm to the user that they have registered
+          confirm('You have registered successfully');
           this.router.navigate(['/login']);
         },
         error => {
+          this.errormessage = true;
+          this.errorMessages = error.error.message;
+          // show the error to the user
+          
+
           console.log(error);
         }
       );

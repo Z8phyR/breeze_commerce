@@ -6,7 +6,7 @@
     background-color: #fff;
     border-radius: 10px; /* Smaller border radius for a closer match */
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the form correctly */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted shadow for subtlety */
