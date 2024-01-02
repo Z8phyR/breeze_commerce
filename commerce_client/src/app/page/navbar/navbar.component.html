@@ -5,8 +5,11 @@
         <ul>
             <li class="nav-item"><a href="#">Shop</a></li>
             <li class="nav-item"><a routerLink="/profile">My Profile</a></li>
-            <li class="nav-item"><a href="#">News</a></li>    
-            <li class="nav-item"><a routerLink="/login">Login</a></li>
+            <li class="nav-item"><a href="#">News</a></li>  
+            <li class="nav-item">
+                <a style="cursor: pointer;"*ngIf="(authService.isLoggedIn$ | async)" (click)="logout()">Logout</a>
+                <a *ngIf="!(authService.isLoggedIn$ | async)" routerLink="/login">Login</a>
+              </li>
             <li><button class="cart">Cart</button></li>
         </ul>
 </div>
