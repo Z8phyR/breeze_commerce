@@ -5,6 +5,7 @@ const productSchema = new mongoose.Schema({
   description: String,
   price: Number,
   quantity: Number,
+  image: String,
 });
 
 
@@ -14,6 +15,12 @@ const userSchema = new mongoose.Schema({
   lastName: String,
   email: String,
   password: String,
+  cart: [
+    {
+      productId: String,
+      quantity: Number,
+    },
+  ],
 });
 
 const orderSchema = new mongoose.Schema({
@@ -25,6 +32,8 @@ const orderSchema = new mongoose.Schema({
     },
   ],
   totalPrice: Number,
+  status: String,
+
 });
 
 const reviewSchema = new mongoose.Schema({

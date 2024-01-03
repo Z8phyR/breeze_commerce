@@ -15,12 +15,14 @@ const productsRoutes = require('./productsRoutes');
 const usersRoutes = require('./usersRoutes');
 const orderRoutes = require('./orderRoutes');
 const reviewsRoutes = require('./reviewsRoutes');
+const cartRoutes = require('./cartRoutes');
+
 
 app.use('/products', productsRoutes);
 app.use('/users', usersRoutes);
 app.use('/orders', orderRoutes);
 app.use('/reviews', reviewsRoutes);
-
+app.use('/cart', cartRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello World');

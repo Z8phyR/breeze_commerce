@@ -1,1 +1,25 @@
-<p>products works!</p>
+<div class="header">
+    <h1>Products</h1>
+    <div class="cart">
+        <a routerLink="/cart">Cart</a>
+    </div>
+</div>
+<div class="products-list">
+    <div class="product" *ngFor="let product of products">
+        <div class="product-image">
+            <img [src]="'/assets/' + product.image" alt="{{ product.name }}">
+        </div>
+        <div class="product-name">
+        <p><strong>{{ product.name }}</strong></p>
+        </div>
+        <div class="product-price">
+        {{ product.price }}
+        </div>
+        <div class="product-description">
+        {{ product.description }}
+        </div>
+        <div class="product-button">
+        <button (click)="addToCart(product)">Add to cart</button>
+        </div>
+    </div>
+</div>
