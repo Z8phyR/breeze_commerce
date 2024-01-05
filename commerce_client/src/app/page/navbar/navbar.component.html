@@ -1,4 +1,5 @@
 <!-- Description: Navbar component for the commerce client -->
+
 <div class="navbar">
     <div class="logo">Breeze Commerce</div>
     <div class="nav-items">
@@ -10,6 +11,20 @@
                 <a style="cursor: pointer;"*ngIf="(authService.isLoggedIn$ | async)" (click)="logout()">Logout</a>
                 <a *ngIf="!(authService.isLoggedIn$ | async)" routerLink="/login">Login</a>
               </li>
-            <li><button class="cart">Cart</button></li>
+              <li class="nav-item">
+                <mat-icon matBadge="{{ cartNum > 0 ? cartNum : null }}" 
+                          matBadgeHidden="{{ cartNum === 0 }}" 
+                          aria-hidden="false">
+                  shopping_cart
+                </mat-icon>
+                <!-- <mat-icon [matBadge]="cartNum$ | async" 
+                          [matBadgeHidden]="(cartNum$ | async) === 0" 
+                          aria-hidden="false">
+                shopping_cart
+                </mat-icon> -->
+
+
+              </li>
+              
         </ul>
 </div>

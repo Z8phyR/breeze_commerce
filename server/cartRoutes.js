@@ -3,14 +3,15 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const router = express.Router();
 require('dotenv/config');
-const verifyToken = require('./userRoutes.js').verifyToken;
-
+const { verifyToken } = require('./usersRoutes'); // Import the verifyToken function
 const { User } = require('../database/database');
 
 // Cart Routes
 
 // Add a product to the cart
-router.post('/cart/add', verifyToken, async (req, res) => {
+router.post('/add', verifyToken, async (req, res) => {
+    console.log(req.body);
+    console.log(req.user);
     try {
         const user = await User.findById(req.user._id);
         const product = {
@@ -20,13 +21,14 @@ router.post('/cart/add', verifyToken, async (req, res) => {
         user.cart.push(product);
         const savedUser = await user.save();
         res.json(savedUser);
+        console.log(savedUser);
     } catch (err) {
         res.json({ message: err });
     }
 });
 
 // Get all products in the cart
-router.get('/cart', verifyToken, async (req, res) => {
+router.get('', verifyToken, async (req, res) => {
     try {
         const user = await User.findById(req.user._id);
         res.json(user.cart);
@@ -37,7 +39,7 @@ router.get('/cart', verifyToken, async (req, res) => {
 );
 
 // Update a product in the cart
-router.put('/cart/update/:productId', verifyToken, async (req, res) => {
+router.put('/update/:productId', verifyToken, async (req, res) => {
     try {
         const user = await User.findById(req.user._id);
         const product = user.cart.find(product => product.productId === req.params.productId);
@@ -51,7 +53,7 @@ router.put('/cart/update/:productId', verifyToken, async (req, res) => {
 );
 
 // Delete a product from the cart
-router.delete('/cart/delete/:productId', verifyToken, async (req, res) => {
+router.delete('/delete/:productId', verifyToken, async (req, res) => {
     try {
         const user = await User.findById(req.user._id);
         const updatedCart = user.cart.filter(product => product.productId !== req.params.productId);
@@ -65,7 +67,7 @@ router.delete('/cart/delete/:productId', verifyToken, async (req, res) => {
 );
 
 // Empty the cart
-router.delete('/cart/delete', verifyToken, async (req, res) => {
+router.delete('/delete', verifyToken, async (req, res) => {
     try {
         const user = await User.findById(req.user._id);
         user.cart = [];
@@ -78,7 +80,7 @@ router.delete('/cart/delete', verifyToken, async (req, res) => {
 );
 
 // Checkout
-router.post('/cart/checkout', verifyToken, async (req, res) => {
+router.post('/checkout', verifyToken, async (req, res) => {
     try {
         const user = await User.findById(req.user._id);
         const order = {
@@ -107,3 +109,5 @@ router.get('/orders', verifyToken, async (req, res) => {
     }
 }
 );
+
+module.exports = router;

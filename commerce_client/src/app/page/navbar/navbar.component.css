@@ -19,7 +19,12 @@ color: #508A52;
  word-wrap: break-word;
  /* padding: 15px; */
 }
+mat-icon {
+    color: white; /* Or any color that matches your navbar */
+    font-size: 36px;
 
+  }
+  
 button.cart {
     background-color: #011D02;
     border-radius: 25px;

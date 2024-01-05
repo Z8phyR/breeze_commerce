@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 interface Product {
   name: string;
@@ -22,13 +22,17 @@ export class ProductsService {
     return this.http.get<any>(`${this.baseUrl}/products`);
   }
 
-  addToCart(product: any): Observable<any> {
-    return this.http.post<any>(`${this.baseUrl}/cart/add`, product);
+  addToCart(product: any, token: any): Observable<any> {
+    const header = { 'Authorization': `${token}` }
+    return this.http.post<any>(`${this.baseUrl}/cart/add`, product, {headers: header});
+    
   }
 
-  getCart(): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}/cart`);
+  getCart(token: any): Observable<any> {
+    const header = { 'Authorization': `${token}` }
+    return this.http.get<any>(`${this.baseUrl}/cart`, { headers: header });
   }
+  
 
   deleteCart(): Observable<any> {
     return this.http.get<any>(`${this.baseUrl}/cart/delete`);
@@ -42,5 +46,16 @@ export class ProductsService {
     return this.http.get<any>(`${this.baseUrl}/cart/checkout`);
   }
 
+  // Cart Functions
+  private cartItemCount = new BehaviorSubject<number>(0);
+  
+  getItemCartCount() {
+    return this.cartItemCount.asObservable();
+  }
+
+  updateCartCount(count: number) {
+    this.cartItemCount.next(count);
+  }
+  
   
 }
