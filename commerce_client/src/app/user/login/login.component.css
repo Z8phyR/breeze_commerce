@@ -67,3 +67,7 @@
     height: 100vh;
     
   }
+
+  .dismiss-snackbar {
+    color: #4da648;
+  }

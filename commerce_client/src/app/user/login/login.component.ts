@@ -14,11 +14,15 @@ import { AuthService } from '../../api/auth.service';
 import { Auth } from 'mongodb';
 import { NgZone } from '@angular/core';
 import { ProductsService } from '../../api/products.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { SnackbarComponent } from '../../snackbar/snackbar.component';
+
+
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterModule, ReactiveFormsModule, HttpClientModule, CommonModule],
+  imports: [RouterModule, ReactiveFormsModule, HttpClientModule, CommonModule ],
   providers: [],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
@@ -29,13 +33,37 @@ export class LoginComponent {
     private router: Router,
     private authService: AuthService,
     private ngZone: NgZone,
-    private productsService: ProductsService
+    private productsService: ProductsService,
+    private snackBar: MatSnackBar
   ) {}
 
   loginForm = new FormGroup({
     username: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
   });
+
+  afterLogin(token: any) {
+    this.snackBar.openFromComponent(SnackbarComponent, {
+      duration: 1000,
+      data: { message: 'Login Successful', icon: 'check_circle', color: 'lightgreen' },
+      panelClass: ['dismiss-snackbar']
+    }).afterDismissed().subscribe({
+      next: () => {
+      this.productsService.getCart(token.token).subscribe(
+        {
+          next: (cart) => {
+            this.productsService.updateCartCount(cart.length);
+            // console.log(" (LOGIN) Cart Count: ", cart.length);
+          },
+          error: (error) => {
+            console.log(error);
+            
+          }
+        });
+        this.router.navigate(['/home'])
+    }
+    });
+  }
 
   onSubmit() {
     if (this.loginForm.valid) {
@@ -45,24 +73,25 @@ export class LoginComponent {
         this.usersService
           .login({ username: username || '', password: password || '' })
           .subscribe(
-            (token) => {
-              this.authService.login(token.token);
-              this.productsService.getCart(token.token).subscribe(
-                cart => {
-                  this.productsService.updateCartCount(cart.length);
-                  console.log(" (LOGIN) Cart Count: ", cart.length);
-                },
-                error => {
-                  console.log(error);
-                }
-              );
-              this.router.navigate(['/home'])
-            },
-            (error) => {
-              console.log(error);
-            }
-          );
+            {
+              next: (token) => {
+                this.authService.login(token.token);
+                this.afterLogin(token);
+              },
+              error: (error) => {
+                
+                this.snackBar.openFromComponent(SnackbarComponent, {
+                  duration: 1000,
+                  data: { message: 'Login Failed', icon: 'error', color: 'lightpink' },
+                  panelClass: ['dismiss-snackbar']
+                  });
+                // clear the form
+                this.loginForm.reset();
+                // console.log(error);
+              },
+            });
       });
     }
   }
+
 }

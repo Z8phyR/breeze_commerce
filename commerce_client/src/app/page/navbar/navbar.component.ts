@@ -9,9 +9,8 @@ import {MatBadgeModule} from '@angular/material/badge'
 import { PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef } from '@angular/core';
-import { Observable, of } from 'rxjs';
-
-
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { SnackbarComponent } from '../../snackbar/snackbar.component';
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -32,7 +31,8 @@ export class NavbarComponent{
     public authService: AuthService,
     private productsService: ProductsService,
     private changeDetectorRef: ChangeDetectorRef,
-    private ngZone: NgZone
+    private ngZone: NgZone,
+    private snackBar: MatSnackBar
   ) {
     this.fetchCartCount();
     this.productsService.getItemCartCount().subscribe({
@@ -70,10 +70,17 @@ fetchCartCount() {
 }
   logout() {
       this.authService.logout();
-      alert('You have been logged out');
-      this.cartNum = 0;  
-      this.router.navigate(['/login']);
-  }
+      this.cartNum = 0;
+      this.snackBar.openFromComponent(SnackbarComponent, {
+        duration: 1500,
+        data: { message: 'Logout Successful', icon: 'waving_hand', color: 'lightgreen' },
+        panelClass: ['dismiss-snackbar']
+      }).afterDismissed().subscribe({
+        next: () => {
+          this.router.navigate(['/login'])
+        }
+      });
+    }
 
     
 
