@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { UsersService } from '../../api/users.service';
+import { UsersService } from '../../../api/users.service';
 import { Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 

@@ -1,9 +1,9 @@
 import { Component, OnInit, NgModule, NgZone } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ProductsService } from '../api/products.service';
+import { ProductsService } from '../../api/products.service';
 import { CommonModule } from '@angular/common';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { SnackbarComponent } from '../snackbar/snackbar.component';
+import { SnackbarComponent } from '../../components/snackbar/snackbar.component';
 
 interface Product {
   name: string;
@@ -19,23 +19,23 @@ interface Product {
   imports: [CommonModule, RouterModule],
   providers: [],
   templateUrl: './products.component.html',
-  styleUrl: './products.component.css'
+  styleUrl: './products.component.css',
 })
 export class ProductsComponent implements OnInit {
+  constructor(
+    private productsService: ProductsService,
+    private ngZone: NgZone,
+    private snackBar: MatSnackBar
+  ) {}
 
-  constructor(private productsService: ProductsService,
-              private ngZone: NgZone,
-              private snackBar: MatSnackBar
-    ) {}
-  
-  products:Product[] = [];
+  products: Product[] = [];
 
   ngOnInit() {
     this.productsService.products().subscribe(
-      products => {
+      (products) => {
         this.products = products;
       },
-      error => {
+      (error) => {
         console.log(error);
       }
     );
@@ -46,23 +46,26 @@ export class ProductsComponent implements OnInit {
     // console.log(product);
     const token = localStorage.getItem('token');
     // get user from login service or something similiar
-    this.productsService.addToCart(product,token).subscribe(
-      res => {
+    this.productsService.addToCart(product, token).subscribe(
+      (res) => {
         this.ngZone.run(() => {
           this.productsService.updateCartCount(res.cart.length);
           this.snackBar.openFromComponent(SnackbarComponent, {
             duration: 1000,
-            data: { message: 'Added to Cart', icon: 'check_circle', color: 'lightgreen' },
-            panelClass: ['dismiss-snackbar']
+            data: {
+              message: 'Added to Cart',
+              icon: 'check_circle',
+              color: 'lightgreen',
+            },
+            panelClass: ['dismiss-snackbar'],
           });
-          console.log("(PRODUCT COMPONENT): Cart Count: ", res.cart.length);
+          console.log('(PRODUCT COMPONENT): Cart Count: ', res.cart.length);
         });
         console.log(res);
       },
-      error => {
+      (error) => {
         console.log(error);
       }
     );
   }
-
 }

@@ -22,6 +22,10 @@ export class ProductsService {
     return this.http.get<any>(`${this.baseUrl}/products`);
   }
 
+  getProduct(id: string): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}/products/${id}`);
+  }
+
   addToCart(product: any, token: any): Observable<any> {
     const header = { 'Authorization': `${token}` }
     return this.http.post<any>(`${this.baseUrl}/cart/add`, product, {headers: header});

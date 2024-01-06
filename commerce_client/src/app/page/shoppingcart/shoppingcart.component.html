@@ -1,0 +1,27 @@
+<p>shoppingcart works!</p>
+<header>
+    <h3>Shopping Cart</h3>
+</header>
+
+<div class="cart-items">
+    <div class="cart-item" *ngFor="let item of cartItems">
+        <div class="cart-item-image">
+            <img [src]="'/assets/' + item.image" alt="{{ item.name }}">
+        </div>
+        <div class="cart-item-name">
+            <p><strong>{{ item.name }}</strong></p>
+        </div>
+        <div class="cart-item-price">
+            {{ item.price }}
+        </div>
+        <!-- <div class="cart-item-quantity" *ngIf="showQuantityInput">
+            <input type="number" [(ngModel)]="item.quantity" (change)="updateQuantity(item)">
+        </div> -->
+        <div class="cart-item-total">
+            {{ item.price * item.quantity }}
+        </div>
+        <div class="cart-item-remove">
+            <button (click)="removeFromCart(item)">Remove</button>
+        </div>
+    </div>
+</div>

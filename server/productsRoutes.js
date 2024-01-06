@@ -14,8 +14,12 @@ router.get('/', async (req, res) => {
 
 // GET a specific product by id
 router.get('/:productId', async (req, res) => {
+    // console.log('Product ID:', req.params.productId); // Log the product ID
     try {
         const product = await Product.findById(req.params.productId);
+        if (!product) {
+            return res.status(404).json({ message: 'Product not found' });
+        }
         res.json(product);
     } catch (err) {
         res.json({ message: err });

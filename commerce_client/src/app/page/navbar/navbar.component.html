@@ -6,7 +6,7 @@
         <ul>
             <li class="nav-item"><a routerLink="/products">Shop</a></li>
             <li class="nav-item"><a routerLink="/profile">My Profile</a></li>
-            <li class="nav-item"><a href="#">News</a></li>  
+            <li class="nav-item"><a routerLink="/home">News</a></li>  
             <li class="nav-item">
                 <a style="cursor: pointer;"*ngIf="(authService.isLoggedIn$ | async)" (click)="logout()">Logout</a>
                 <a *ngIf="!(authService.isLoggedIn$ | async)" routerLink="/login">Login</a>
@@ -14,16 +14,11 @@
               <li class="nav-item">
                 <mat-icon matBadge="{{ cartNum > 0 ? cartNum : null }}" 
                           matBadgeHidden="{{ cartNum === 0 }}" 
-                          aria-hidden="false">
+                          aria-hidden="false"
+                          routerLink="/shoppingcart"
+                          style="cursor: pointer;">
                   shopping_cart
                 </mat-icon>
-                <!-- <mat-icon [matBadge]="cartNum$ | async" 
-                          [matBadgeHidden]="(cartNum$ | async) === 0" 
-                          aria-hidden="false">
-                shopping_cart
-                </mat-icon> -->
-
-
               </li>
               
         </ul>

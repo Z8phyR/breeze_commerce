@@ -15,8 +15,6 @@ import { MAT_SNACK_BAR_DATA } from '@angular/material/snack-bar';
   `,
   styles: [`
     .snackbar {
-      // color: #4da648;
-      // background-color: #fff;
       display: flex;
       align-items: center;
       justify-content: space-between;
