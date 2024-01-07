@@ -29,7 +29,6 @@ export class ProductsComponent implements OnInit {
   ) {}
 
   products: Product[] = [];
-
   ngOnInit() {
     this.productsService.products().subscribe(
       (products) => {
@@ -42,11 +41,17 @@ export class ProductsComponent implements OnInit {
   }
 
   // add to user's cart
-  addToCart(product: any) {
+  addToCart(product: any, quantity: number) {
     // console.log(product);
     const token = localStorage.getItem('token');
+  
     // get user from login service or something similiar
-    this.productsService.addToCart(product, token).subscribe(
+    const cartItem = {
+      productId: product._id,
+      quantity: quantity,
+    };
+    
+    this.productsService.addToCart(cartItem, token).subscribe(
       (res) => {
         this.ngZone.run(() => {
           this.productsService.updateCartCount(res.cart.length);

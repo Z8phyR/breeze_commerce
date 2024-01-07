@@ -23,6 +23,20 @@ export class ShoppingcartComponent {
   ) {}
 
   cartItems: any = [];
+  subtotal: number = 0;
+  tax: number = 0;
+  total: number = 0;
+  shipping: number = 0;
+
+  updateTotals() {
+    this.subtotal = 0;
+    this.cartItems.forEach((item: any) => {
+      this.subtotal += item.product.price * item.quantity;
+    });
+    this.shipping += this.cartItems.length * 2.99;
+    this.tax = this.subtotal * 0.1;
+    this.total = this.subtotal + this.tax;
+  }
 
   ngOnInit() {
     this.updateCart();
@@ -41,9 +55,9 @@ export class ShoppingcartComponent {
             next: (product) => {
               if (product) {
                 console.log('Product found:', product);
-                this.cartItems.push(product)
-              } else {
-                console.log('Product not found, received:', product);
+                this.cartItems.push({product: product, quantity: item.quantity})
+                if (cart.indexOf(item) === cart.length - 1) {
+                  this.updateTotals();}
               }
             },
             error: (error) => {
@@ -60,8 +74,12 @@ export class ShoppingcartComponent {
 }
 
   removeFromCart(product: any) {
-    const token = localStorage.getItem('token');
-    this.productsService.deleteCartItem(product).subscribe({
+    const token = localStorage.getItem('token') || '';
+    if (!token || token === '') {
+      this.router.navigate(['/login']);
+    }
+    console.log(product)
+    this.productsService.deleteCartItem(product, token).subscribe({
       next: () => {
         this.snackBar.openFromComponent(SnackbarComponent, {
           duration: 1000,

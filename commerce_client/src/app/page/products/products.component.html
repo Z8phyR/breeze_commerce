@@ -5,7 +5,8 @@
     </div>
 </div>
 <div class="products-list">
-    <div class="product" *ngFor="let product of products">
+    @for (product of products ;track $index) {
+    <div class="product">
         <div class="product-image">
             <img [src]="'/assets/' + product.image" alt="{{ product.name }}">
         </div>
@@ -18,8 +19,12 @@
         <div class="product-description">
         {{ product.description }}
         </div>
+        <div class="quantity">
+            <input type="number" #quantityInput min="1" value="1">
+        </div>
         <div class="product-button">
-        <button (click)="addToCart(product)">Add to cart</button>
+            <button (click)="addToCart(product, quantityInput.valueAsNumber || 1)">Add to cart</button>
         </div>
     </div>
+}
 </div>

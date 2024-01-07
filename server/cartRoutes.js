@@ -16,7 +16,7 @@ router.post('/add', verifyToken, async (req, res) => {
     try {
         const user = await User.findById(req.user._id);
         const product = {
-            productId: req.body._id,
+            productId: req.body.productId,
             quantity: req.body.quantity
         };
         user.cart.push(product);
@@ -57,6 +57,7 @@ router.put('/update/:productId', verifyToken, async (req, res) => {
 router.delete('/delete/:productId', verifyToken, async (req, res) => {
     try {
         const user = await User.findById(req.user._id);
+
         const updatedCart = user.cart.filter(product => product.productId !== req.params.productId);
         user.cart = updatedCart;
         const savedUser = await user.save();

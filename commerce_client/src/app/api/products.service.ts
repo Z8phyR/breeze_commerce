@@ -42,8 +42,9 @@ export class ProductsService {
     return this.http.get<any>(`${this.baseUrl}/cart/delete`);
   }
 
-  deleteCartItem(id: string): Observable<any> {
-    return this.http.delete<any>(`${this.baseUrl}/cart/delete/${id}`);
+  deleteCartItem(id: string,token: string): Observable<any> {
+    const header = { 'Authorization': `${token}` }
+    return this.http.delete<any>(`${this.baseUrl}/cart/delete/${id}`, { headers: header });
   }
 
   checkout(): Observable<any> {

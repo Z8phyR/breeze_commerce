@@ -15,7 +15,7 @@ import { PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { SnackbarComponent } from '../../components/snackbar/snackbar.component';
+import { SnackbarComponent } from '../snackbar/snackbar.component';
 @Component({
   selector: 'app-navbar',
   standalone: true,
