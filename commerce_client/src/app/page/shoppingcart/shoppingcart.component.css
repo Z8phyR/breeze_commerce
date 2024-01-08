@@ -1,26 +1,101 @@
-.cart-item-image img {
+/* Reset margins for all child elements inside .cart-item-name */
+.cart-item h2,
+.cart-item p,
+.cart-item div
+{
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  /* You can add custom padding or margin if needed for specific elements */
+}
+
+.cart-item-image {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+}
+
+
+.cart-item-image img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px 0 0 15px;
+}
+
+.cart-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-header h2 , .cart-header p {
+  padding: 10px;
 }
 
 .cart-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .cart-item {
-  width: 90%;
+  width: 700px;
+  /* width: 100%; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
   margin-bottom: 20px;
+  margin-left: 10px;
   border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
+  background-color: palegreen
 
 }
+
+.cart-item-name {
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-between;
+  padding-left: 15px;
+  /* background-color: aquamarine; */
+}
+
+
+.cart-item-name p
+  {
+    padding-left: 10px;
+  }
+
+
+.cart-total-container {
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.cart-total-container p {
+  padding-right: 10px;
+}
+
+.cart-item-remove button {
+  margin-right: 10px;
+}
+
+.cart-item-text {
+  width: 100%;
+  /* background-color: brown; */
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 
 .order-summary {
   width: 30%;
@@ -28,8 +103,18 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
+}   
+
+.order-summary-item {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }

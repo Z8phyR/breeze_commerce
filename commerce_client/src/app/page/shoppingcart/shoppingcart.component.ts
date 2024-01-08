@@ -33,9 +33,20 @@ export class ShoppingcartComponent {
     this.cartItems.forEach((item: any) => {
       this.subtotal += item.product.price * item.quantity;
     });
+    //update subtotal to be 00.00 format
+    this.subtotal = Math.round(this.subtotal * 100) / 100;
     this.shipping += this.cartItems.length * 2.99;
+    //update shipping to be 00.00 format
+    this.shipping = Math.round(this.shipping * 100) / 100;
+
     this.tax = this.subtotal * 0.1;
+    //update tax to be 00.00 format and round to 2 decimal placing a 0 if needed
+    this.tax = Math.round(this.tax * 100) / 100;
+    // round to 2 decimal placing a 0 if needed
     this.total = this.subtotal + this.tax;
+    this.total += this.shipping;
+    //update total to be 00.00 format
+    this.total = Math.round(this.total * 100) / 100;
   }
 
   ngOnInit() {
@@ -78,7 +89,7 @@ export class ShoppingcartComponent {
     if (!token || token === '') {
       this.router.navigate(['/login']);
     }
-    console.log(product)
+    product = product.product._id
     this.productsService.deleteCartItem(product, token).subscribe({
       next: () => {
         this.snackBar.openFromComponent(SnackbarComponent, {
@@ -90,12 +101,17 @@ export class ShoppingcartComponent {
           },
           panelClass: ['dismiss-snackbar'],
         });
+        this.cartItems = [];
         this.updateCart();
       },
       error: (error) => {
         console.log(error);
       },
     });
+  }
+
+  checkOut(): void {
+    console.log('checkOut');
   }
 
   // updateQuantity(product: any, quantity: number) {

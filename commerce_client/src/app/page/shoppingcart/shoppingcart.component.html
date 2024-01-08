@@ -1,6 +1,6 @@
-<header>
-    <h2>Shopping Cart</h2>
-</header>
+<div class="cart-header">
+    <h2>Shopping Cart</h2> <p>{{cartItems.length}} items</p>
+</div>
 <br>
 <div class="cart-container">
 
@@ -10,27 +10,35 @@
         <div class="cart-item-image">
             <img [src]="'/assets/' + item.product.image" alt="{{ item.product.name }}">
         </div>
-        <div class="cart-item-name">
-            <p><strong>{{ item.product.name }}</strong></p>
-            <p>Quantity: {{item.quantity}}</p>
-        </div>
-        <div class="cart-item-price">
-            <p>
-                $ {{ item.product.price }}
-            </p>
-        </div>
+        <div class="cart-item-text">
+            <div class="cart-item-name">
+                <div class="item-name">
+                    <p><strong>{{ item.product.name }}</strong></p>
+                    <div class="cart-item-price">
+                        <p>$ {{ item.product.price }}</p>
+                    </div>
+                </div>
+                <p>Quantity: {{item.quantity}}</p>
+            
+
         <!-- <div class="cart-item-quantity" *ngIf="showQuantityInput">
             <input type="number" [(ngModel)]="item.quantity" (change)="updateQuantity(item)">
         </div> -->
-        <div class="cart-item-total">
-            <p>
-                Total: {{ item.product.price * item.quantity }}
-            </p>
-        </div>
-        <div class="cart-item-remove">
-            <button (click)="removeFromCart(item)">Remove</button>
+            </div>
+            <div class="cart-total-container">
+
+                <div class="cart-item-total">
+                    <p>
+                        Total: {{ item.product.price * item.quantity }}
+                    </p>
+                </div>
+                <div class="cart-item-remove">
+                    <button (click)="removeFromCart(item)">Remove</button>
+                </div>
+            </div>
         </div>
     </div>
+
 }
 </div>
 <div class="order-summary">
@@ -51,12 +59,12 @@
             <p>$ {{ shipping }}</p>
         </div>
         <div class="order-summary-item">
-            <p>Total</p>
+            <p><strong>Total</strong></p>
             <p>$ {{ total }}</p>
         </div>
     </div>
     <div class="order-summary-footer">
-        <!-- <button (click)="checkout()">Checkout</button>  -->
+        <button (click)="checkOut()">Checkout</button> 
     </div>
 </div>
 </div>

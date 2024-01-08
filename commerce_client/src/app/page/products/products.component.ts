@@ -44,13 +44,47 @@ export class ProductsComponent implements OnInit {
   addToCart(product: any, quantity: number) {
     // console.log(product);
     const token = localStorage.getItem('token');
-  
-    // get user from login service or something similiar
     const cartItem = {
       productId: product._id,
       quantity: quantity,
     };
     
+    // Retrieve the current cart first
+    this.productsService.getCart(token).subscribe(
+      (cart) => {
+        // If the cart is empty, add the item to the cart
+        if (cart.length === 0) {
+          console.log('Cart is empty, adding item');
+          this.saveToCart(cartItem, token);
+        } else {
+          // If the cart is not empty, check if the item is already in the cart
+          let itemFound = false;
+          cart.forEach((item: any) => {
+            if (item.productId === cartItem.productId) {
+              itemFound = true;
+              // If the item is already in the cart, update the quantity
+              const newQuantity = item.quantity + cartItem.quantity;
+              const updatedCartItem = {
+                productId: item.productId,
+                quantity: newQuantity,
+              };
+              this.updateCartCount(updatedCartItem, token);
+              console.log('Item already in cart, updated quantity');
+            }
+          });
+          // If the item is not in the cart, add it to the cart
+          if (!itemFound) {
+            console.log('Item not in cart, adding item');
+            this.saveToCart(cartItem, token);
+          }
+        }
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
+    saveToCart(cartItem: any, token: any) {
     this.productsService.addToCart(cartItem, token).subscribe(
       (res) => {
         this.ngZone.run(() => {
@@ -73,4 +107,29 @@ export class ProductsComponent implements OnInit {
       }
     );
   }
+
+  updateCartCount(cartItem: any, token: any) {
+    this.productsService.updateCartItems(cartItem, token).subscribe(
+      (res) => {
+        this.ngZone.run(() => {
+          this.productsService.updateCartCount(res.cart.length);
+          this.snackBar.openFromComponent(SnackbarComponent, {
+            duration: 1000,
+            data: {
+              message: 'Updated Cart Amount',
+              icon: 'check_circle',
+              color: 'lightgreen',
+            },
+            panelClass: ['dismiss-snackbar'],
+          });
+          console.log('(PRODUCT COMPONENT): Cart Count: ', res.cart.length);
+        });
+        console.log(res);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
+
 }
