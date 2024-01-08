@@ -4,6 +4,7 @@ import { ProductsService } from '../../api/products.service';
 import { CommonModule } from '@angular/common';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { SnackbarComponent } from '../../components/snackbar/snackbar.component';
+import { ProductDetailsComponent } from '../../components/product-details/product-details.component';
 
 interface Product {
   name: string;
@@ -130,6 +131,11 @@ export class ProductsComponent implements OnInit {
         console.log(error);
       }
     );
+  }
+
+  productDetails(product: any) {
+    console.log(product);
+
   }
 
 }

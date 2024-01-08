@@ -1,4 +1,4 @@
-import { Component,NgModule, OnInit, Inject } from '@angular/core';
+import { Component, NgModule, OnInit, Inject } from '@angular/core';
 import { ProductsService } from '../../api/products.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { SnackbarComponent } from '../../components/snackbar/snackbar.component';
@@ -6,20 +6,24 @@ import { Router } from '@angular/router';
 import { PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { forkJoin, map } from 'rxjs';
+import { NgbdModalConfirm } from '../../components/confirmwindow/confirmwindow.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-shoppingcart',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, NgbdModalConfirm],
   templateUrl: './shoppingcart.component.html',
-  styleUrl: './shoppingcart.component.css'
+  styleUrl: './shoppingcart.component.css',
 })
 export class ShoppingcartComponent {
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
     private productsService: ProductsService,
     private snackBar: MatSnackBar,
-    private router: Router
+    private router: Router,
+    private modalService: NgbModal
   ) {}
 
   cartItems: any = [];
@@ -28,25 +32,25 @@ export class ShoppingcartComponent {
   total: number = 0;
   shipping: number = 0;
 
+  calculateItemPrice(item: any) {
+    const price = Number(item.product.price);
+    const quantity = Number(item.quantity);
+    return (price * quantity).toFixed(2);
+  }
+
   updateTotals() {
+    // console.log('updateTotals');
     this.subtotal = 0;
     this.cartItems.forEach((item: any) => {
       this.subtotal += item.product.price * item.quantity;
     });
-    //update subtotal to be 00.00 format
-    this.subtotal = Math.round(this.subtotal * 100) / 100;
-    this.shipping += this.cartItems.length * 2.99;
-    //update shipping to be 00.00 format
-    this.shipping = Math.round(this.shipping * 100) / 100;
-
-    this.tax = this.subtotal * 0.1;
-    //update tax to be 00.00 format and round to 2 decimal placing a 0 if needed
-    this.tax = Math.round(this.tax * 100) / 100;
-    // round to 2 decimal placing a 0 if needed
-    this.total = this.subtotal + this.tax;
-    this.total += this.shipping;
-    //update total to be 00.00 format
-    this.total = Math.round(this.total * 100) / 100;
+    // Round to two decimal places
+    this.subtotal = parseFloat(this.subtotal.toFixed(2));
+    this.shipping = parseFloat((this.cartItems.length * 2.99).toFixed(2));
+    this.tax = parseFloat((this.subtotal * 0.1).toFixed(2));
+    this.total = parseFloat((this.subtotal + this.tax).toFixed(2));
+    // For shipping fee
+    this.total = parseFloat((this.total + this.shipping).toFixed(2));
   }
 
   ngOnInit() {
@@ -55,59 +59,72 @@ export class ShoppingcartComponent {
 
   updateCart() {
     if (isPlatformBrowser(this.platformId)) {
-    const token = localStorage.getItem('token');
-    
-    this.productsService.getCart(token).subscribe({
-      next: (cart) => {
-        console.log(cart)
-        // retrive the product information from the cart by its id and push it into the cartItems array
-        cart.forEach((item: any) => {
-          this.productsService.getProduct(item.productId).subscribe({
-            next: (product) => {
-              if (product) {
-                console.log('Product found:', product);
-                this.cartItems.push({product: product, quantity: item.quantity})
-                if (cart.indexOf(item) === cart.length - 1) {
-                  this.updateTotals();}
-              }
+      const token = localStorage.getItem('token');
+
+      this.productsService.getCart(token).subscribe({
+        next: (cart) => {
+          const productObservables = cart.map((item: any) =>
+            this.productsService
+              .getProduct(item.productId)
+              .pipe(
+                map((product: any) => ({ product, quantity: item.quantity }))
+              )
+          );
+
+          forkJoin(productObservables).subscribe({
+            next: (cartItems: any) => {
+              this.cartItems = cartItems;
+              this.updateTotals();
             },
             error: (error) => {
-              console.log('Error fetching product:', error);
+              console.log('Error fetching products:', error);
             },
           });
-        });
-      },
-      error: (error) => {
-        console.log(error);
-      },
-    });
+        },
+        error: (error) => {
+          console.log(error);
+        },
+      });
+    }
   }
-}
 
   removeFromCart(product: any) {
     const token = localStorage.getItem('token') || '';
     if (!token || token === '') {
       this.router.navigate(['/login']);
     }
-    product = product.product._id
-    this.productsService.deleteCartItem(product, token).subscribe({
-      next: () => {
-        this.snackBar.openFromComponent(SnackbarComponent, {
-          duration: 1000,
-          data: {
-            message: 'Removed from Cart',
-            icon: 'check_circle',
-            color: 'lightgreen',
+
+    // confirm('Are you sure you want to remove this item from your cart?');
+    const modalRef = this.modalService.open(NgbdModalConfirm);
+    modalRef.componentInstance.title = `Remove from cart?`;
+    modalRef.componentInstance.customMessage = `Are you sure you want to remove ${product.product.name} from your cart?`;
+    modalRef.result.then(
+      (result) => {
+        console.log(`Closed with: ${result}`);
+        product = product.product._id;
+        this.productsService.deleteCartItem(product, token).subscribe({
+          next: () => {
+            this.snackBar.openFromComponent(SnackbarComponent, {
+              duration: 1000,
+              data: {
+                message: 'Removed from Cart',
+                icon: 'check_circle',
+                color: 'lightgreen',
+              },
+              panelClass: ['dismiss-snackbar'],
+            });
+            this.cartItems = [];
+            this.updateCart();
           },
-          panelClass: ['dismiss-snackbar'],
+          error: (error) => {
+            console.log(error);
+          },
         });
-        this.cartItems = [];
-        this.updateCart();
       },
-      error: (error) => {
-        console.log(error);
-      },
-    });
+      (reason) => {
+        console.log(`Dismissed ${reason}`);
+      }
+    );
   }
 
   checkOut(): void {
@@ -135,8 +152,9 @@ export class ShoppingcartComponent {
   //   });
   // }
   updateQuantity(product: any, quantity: number) {
+    if (quantity === 0 || quantity === null) {
+      this.removeFromCart(product);
+    }
     console.log('updateQuantity');
-
   }
-
 }

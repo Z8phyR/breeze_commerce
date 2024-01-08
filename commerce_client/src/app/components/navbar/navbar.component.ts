@@ -41,10 +41,10 @@ export class NavbarComponent {
     this.fetchCartCount();
     this.productsService.getItemCartCount().subscribe({
       next: (count) => {
-        console.log(
-          'NAVBAR CONSTRUCTOR: Product Service Get Item Count: ',
-          count
-        );
+        // console.log(
+        //   'NAVBAR CONSTRUCTOR: Product Service Get Item Count: ',
+        //   count
+        // );
         this.cartNum = count;
         this.changeDetectorRef.markForCheck();
       },
@@ -66,7 +66,7 @@ export class NavbarComponent {
         (cart) => {
           this.productsService.updateCartCount(cart.length);
           this.cartNum = cart.length;
-          console.log('Cart Count: ', cart.length);
+          // console.log('Cart Count: ', cart.length);
         },
         (error) => {
           console.log(error);
