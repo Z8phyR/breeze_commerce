@@ -1,1 +1,14 @@
-<p>product-details works!</p>
+<h1 mat-dialog-title>{{data.product.name}}</h1>
+<div mat-dialog-content>
+    <img [src]="'/assets/' + data.product.image" alt="{{data.product.name}}" style="width: 100px; height: 100px;">
+    <p>{{data.product.description}}</p>
+    <p>Price: {{data.product.price}}</p>
+    <p>
+        Quantity: 
+        <input type="number" min="1" [(ngModel)]="quantity" name="quantity">
+    </p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close >No</button>
+  <button mat-button mat-dialog-close cdkFocusInitial (click)="addToCart(data.product, quantity)">Ok</button>
+</div>

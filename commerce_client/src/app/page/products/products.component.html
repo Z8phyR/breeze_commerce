@@ -9,7 +9,7 @@
     @for (product of products ;track $index) {
     <div class="product">
         <div class="product-image">
-            <img [src]="'/assets/' + product.image" alt="{{ product.name }}">
+            <img [src]="'/assets/' + product.image" alt="{{ product.name }}" (click) = openProductDetails(product)>
         </div>
         <div class="product-name">
         <p><strong>{{ product.name }}</strong></p>

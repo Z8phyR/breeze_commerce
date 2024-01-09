@@ -4,8 +4,8 @@ import { ProductsService } from '../../api/products.service';
 import { CommonModule } from '@angular/common';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { SnackbarComponent } from '../../components/snackbar/snackbar.component';
-import { ProductDetailsComponent } from '../../components/product-details/product-details.component';
-
+import { MatDialog } from '@angular/material/dialog';
+import { ProductDetailsService } from '../../components/product-details/product-details.service';
 interface Product {
   name: string;
   description: string;
@@ -26,7 +26,8 @@ export class ProductsComponent implements OnInit {
   constructor(
     private productsService: ProductsService,
     private ngZone: NgZone,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private detail: ProductDetailsService,
   ) {}
 
   products: Product[] = [];
@@ -133,9 +134,16 @@ export class ProductsComponent implements OnInit {
     );
   }
 
-  productDetails(product: any) {
-    console.log(product);
+  openProductDetails(product: any) {
+    const dialogRef = this.detail.openDialog(product);
 
+    dialogRef.afterClosed().subscribe((result:any) => {
+      if (result?.addedToCart) {
+        // Call your add to cart logic here
+        console.log('Added to cart:', result.product, 'Quantity:', result.quantity);
+        // this.addToCart(result.product, result.quantity);
+      }
+    });
   }
 
 }

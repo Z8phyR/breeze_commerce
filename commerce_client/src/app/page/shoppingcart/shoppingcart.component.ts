@@ -10,6 +10,7 @@ import { forkJoin, map } from 'rxjs';
 import { NgbdModalConfirm } from '../../components/confirmwindow/confirmwindow.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { ProductDetailsService } from '../../components/product-details/product-details.service';
 
 @Component({
   selector: 'app-shoppingcart',
@@ -24,7 +25,8 @@ export class ShoppingcartComponent {
     private productsService: ProductsService,
     private snackBar: MatSnackBar,
     private router: Router,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private detail: ProductDetailsService
   ) {}
 
   cartItems: any = [];
@@ -32,6 +34,8 @@ export class ShoppingcartComponent {
   tax: number = 0;
   total: number = 0;
   shipping: number = 0;
+  tempQuantity: { [product: number]: number } = {}
+
 
   calculateItemPrice(item: any) {
     const price = Number(item.product.price);
@@ -64,14 +68,16 @@ export class ShoppingcartComponent {
 
       this.productsService.getCart(token).subscribe({
         next: (cart) => {
-          const productObservables = cart.map((item: any) =>
-            this.productsService
+          const productObservables = cart.map((item: any) => {
+            this.tempQuantity[item.productId] = item.quantity || 1;
+            console.log('tempQuantity', this.tempQuantity);
+            return this.productsService
               .getProduct(item.productId)
               .pipe(
                 map((product: any) => ({ product, quantity: item.quantity }))
               )
-          );
-
+              });
+              
           forkJoin(productObservables).subscribe({
             next: (cartItems: any) => {
               this.cartItems = cartItems;
@@ -132,35 +138,12 @@ export class ShoppingcartComponent {
     console.log('checkOut');
   }
 
-  // updateQuantity(product: any, quantity: number) {
-  //   const token = localStorage.getItem('token');
-  //   this.productsService.updateCartItem(product, quantity).subscribe({
-  //     next: () => {
-  //       this.snackBar.openFromComponent(SnackbarComponent, {
-  //         duration: 1000,
-  //         data: {
-  //           message: 'Quantity Updated',
-  //           icon: 'check_circle',
-  //           color: 'lightgreen',
-  //         },
-  //         panelClass: ['dismiss-snackbar'],
-  //       });
-  //       this.updateCart();
-  //     },
-  //     error: (error) => {
-  //       console.log(error);
-  //     },
-  //   });
-  // }
-
   changeQuantity(item: any, change: number): void {
-    const newQuantity = item.quantity + change;
-    if (newQuantity >= 1) {
-      item.quantity = newQuantity;
-    }
+    this.tempQuantity[item.product._id] += change;
   }
 
-  updateQuantity(product: any, quantity: number) {
+  updateQuantity(product: any) {
+    const quantity = this.tempQuantity[product.product._id];
     if (!quantity) {
       return;
     }
@@ -188,4 +171,9 @@ export class ShoppingcartComponent {
       },
     });
   }
+
+  productDetails(product: any) {
+    this.detail.openDialog(product);
+  }
+
 }

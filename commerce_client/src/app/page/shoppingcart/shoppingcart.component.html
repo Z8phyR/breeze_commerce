@@ -9,7 +9,7 @@
     @for (item of cartItems ;track $index) {
     <div class="cart-item">
         <div class="cart-item-image">
-            <img [src]="'/assets/' + item.product.image" alt="{{ item.product.name }}">
+            <img [src]="'/assets/' + item.product.image" alt="{{ item.product.name }}" (click)="productDetails(item.product)" style="cursor: pointer;">
         </div>
         <div class="cart-item-text">
             <div class="cart-item-name">
@@ -18,13 +18,13 @@
                     <div class="cart-item-price">
                         <p>$ {{ item.product.price }}</p>
                     </div>
+                    <p>Quantity: {{item.quantity}}</p>
                 </div>
-                <!-- <p>Quantity: {{item.quantity}}</p> -->
                 <div class="cart-item-quantity" style="padding-left: 10px;">
-                    <button (click)="changeQuantity(item, -1)" [disabled]="item.quantity <= 1">-</button>
-                    <input (keydown)="false" #quantityAmt type="number" min="1" [(ngModel)]="item.quantity">
+                    <button (click)="changeQuantity(item, -1)" [disabled]="this.tempQuantity[item.product_id] <= 1">-</button>
+                    <input (keydown)="false" #quantityAmt type="number" min="1" [(ngModel)]="this.tempQuantity[item.product._id]">
                     <button (click)="changeQuantity(item, 1)">+</button>
-                    <button (click)="updateQuantity(item, quantityAmt.valueAsNumber)">Update</button>
+                    <button (click)="updateQuantity(item)">Update</button>
                 </div>
             </div>
             <div class="cart-total-container">
