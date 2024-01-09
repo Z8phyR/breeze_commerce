@@ -19,13 +19,13 @@
                         <p>$ {{ item.product.price }}</p>
                     </div>
                 </div>
-                <p>Quantity: {{item.quantity}}</p>
-            
-
-        <div class="cart-item-quantity">
-            <input #quantityAmt type="number" min="1" value="1">
-            <button (click)="updateQuantity(item, quantityAmt.valueAsNumber)">Update</button>
-        </div>
+                <!-- <p>Quantity: {{item.quantity}}</p> -->
+                <div class="cart-item-quantity" style="padding-left: 10px;">
+                    <button (click)="changeQuantity(item, -1)" [disabled]="item.quantity <= 1">-</button>
+                    <input (keydown)="false" #quantityAmt type="number" min="1" [(ngModel)]="item.quantity">
+                    <button (click)="changeQuantity(item, 1)">+</button>
+                    <button (click)="updateQuantity(item, quantityAmt.valueAsNumber)">Update</button>
+                </div>
             </div>
             <div class="cart-total-container">
 

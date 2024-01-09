@@ -9,11 +9,12 @@ import { RouterModule } from '@angular/router';
 import { forkJoin, map } from 'rxjs';
 import { NgbdModalConfirm } from '../../components/confirmwindow/confirmwindow.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-shoppingcart',
   standalone: true,
-  imports: [CommonModule, RouterModule, NgbdModalConfirm],
+  imports: [CommonModule, RouterModule, NgbdModalConfirm, FormsModule],
   templateUrl: './shoppingcart.component.html',
   styleUrl: './shoppingcart.component.css',
 })
@@ -151,10 +152,40 @@ export class ShoppingcartComponent {
   //     },
   //   });
   // }
+
+  changeQuantity(item: any, change: number): void {
+    const newQuantity = item.quantity + change;
+    if (newQuantity >= 1) {
+      item.quantity = newQuantity;
+    }
+  }
+
   updateQuantity(product: any, quantity: number) {
-    if (quantity === 0 || quantity === null) {
-      this.removeFromCart(product);
+    if (!quantity) {
+      return;
     }
     console.log('updateQuantity');
+    const token = localStorage.getItem('token');
+    const productItem = {
+      productId: product.product._id,
+      quantity: quantity,
+    };
+    this.productsService.updateCartItems(productItem, token).subscribe({
+      next: () => {
+        this.snackBar.openFromComponent(SnackbarComponent, {
+          duration: 1000,
+          data: {
+            message: 'Quantity Updated',
+            icon: 'check_circle',
+            color: 'lightgreen',
+          },
+          panelClass: ['dismiss-snackbar'],
+        });
+        this.updateCart();
+      },
+      error: (error) => {
+        console.log(error);
+      },
+    });
   }
 }
