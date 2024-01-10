@@ -11,8 +11,6 @@ const { User } = require("../database/database");
 // Add a product to the cart
 router.post("/add", verifyToken, async (req, res) => {
   console.log("CART PRODUCT ADDED: ", req.body);
-  // console.log("CART USER THAT ADDED: ", req.user);
-
   try {
     const user = await User.findById(req.user._id);
     const product = {

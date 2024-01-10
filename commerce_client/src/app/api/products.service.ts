@@ -38,8 +38,9 @@ export class ProductsService {
   }
   
 
-  deleteCart(): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}/cart/delete`);
+  deleteCart(token:string): Observable<any> {
+    const header = { 'Authorization': `${token}` }
+    return this.http.delete<any>(`${this.baseUrl}/cart/delete`, { headers: header });
   }
 
   updateCartItems(cartItems: any, token: any): Observable<any> {

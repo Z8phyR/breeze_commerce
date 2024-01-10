@@ -1,6 +1,7 @@
 const express = require('express');
 const { Order } = require('../database/database');
 const router = express.Router();
+const { verifyToken } = require("./usersRoutes"); // Import the verifyToken function
 
 // GET all orders
 router.get('/', async (req, res) => {
@@ -23,9 +24,17 @@ router.get('/:orderId', async (req, res) => {
 });
 
 // POST a new order
-router.post('/post', async (req, res) => {
+router.post('/post',verifyToken, async (req, res) => {
+    const userId = req.user._id;
+    console.log("USER ID: ", userId);
+    const products = req.body.products;
+    console.log("PRODUCTS: ", products);
+    
     const order = new Order({
-        ...req.body
+        userId: userId,
+        products: products,
+        totalPrice: req.body.totalPrice,
+        status: req.body.status
     });
 
     try {

@@ -1,4 +1,4 @@
-import { Component, NgModule, OnInit, Inject } from '@angular/core';
+import { Component, NgModule, NgZone, Inject } from '@angular/core';
 import { ProductsService } from '../../api/products.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { SnackbarComponent } from '../../components/snackbar/snackbar.component';
@@ -12,6 +12,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { ProductDetailsService } from '../../components/product-details/product-details.service';
 import { CheckoutModalComponent } from '../../components/checkout-modal/checkout-modal.component';
+import { OrdersService } from '../../api/orders.service';
 
 
 @Component({
@@ -28,7 +29,9 @@ export class ShoppingcartComponent {
     private snackBar: MatSnackBar,
     private router: Router,
     private modalService: NgbModal,
-    private detail: ProductDetailsService
+    private detail: ProductDetailsService,
+    private ordersService: OrdersService,
+    private ngZone: NgZone
   ) {}
 
   cartItems: any = [];
@@ -36,7 +39,7 @@ export class ShoppingcartComponent {
   tax: number = 0;
   total: number = 0;
   shipping: number = 0;
-  tempQuantity: { [product: number]: number } = {}
+  tempQuantity: { [product: number]: number } = {};
 
 
   calculateItemPrice(item: any) {
@@ -84,6 +87,7 @@ export class ShoppingcartComponent {
             next: (cartItems: any) => {
               this.cartItems = cartItems;
               this.updateTotals();
+              this.productsService.updateCartCount(cartItems.length);
             },
             error: (error) => {
               console.log('Error fetching products:', error);
@@ -97,22 +101,21 @@ export class ShoppingcartComponent {
     }
   }
 
-  removeFromCart(product: any) {
-    const token = localStorage.getItem('token') || '';
-    if (!token || token === '') {
-      this.router.navigate(['/login']);
-    }
-
-    // confirm('Are you sure you want to remove this item from your cart?');
-    const modalRef = this.modalService.open(NgbdModalConfirm);
-    modalRef.componentInstance.title = `Remove from cart?`;
-    modalRef.componentInstance.customMessage = `Are you sure you want to remove ${product.product.name} from your cart?`;
-    modalRef.result.then(
-      (result) => {
-        console.log(`Closed with: ${result}`);
-        product = product.product._id;
-        this.productsService.deleteCartItem(product, token).subscribe({
-          next: () => {
+removeFromCart(product: any) {
+  const token = localStorage.getItem('token') || '';
+  if (!token || token === '') {
+    this.router.navigate(['/login']);
+  }
+  const modalRef = this.modalService.open(NgbdModalConfirm);
+  modalRef.componentInstance.title = `Remove from cart?`;
+  modalRef.componentInstance.customMessage = `Are you sure you want to remove ${product.product.name} from your cart?`;
+  modalRef.result.then(
+    () => { 
+      product = product.product._id;
+      this.productsService.deleteCartItem(product, token).subscribe({
+        next: () => {
+          // Use NgZone to ensure updates are detected
+          this.ngZone.run(() => {
             this.snackBar.openFromComponent(SnackbarComponent, {
               duration: 1000,
               data: {
@@ -123,7 +126,47 @@ export class ShoppingcartComponent {
               panelClass: ['dismiss-snackbar'],
             });
             this.cartItems = [];
+            this.updateCart(); // Assuming this updates the navbar
+          });
+        },
+        error: (error) => {
+          console.log(error);
+        },
+      });
+    },
+    (reason) => {
+      console.log(`Dismissed ${reason}`);
+    }
+  );
+}
+
+  emptyCart() {
+    const token = localStorage.getItem('token') || '';
+    if (!token || token === '') {
+      this.router.navigate(['/login']);
+    }
+
+    const modalRef = this.modalService.open(NgbdModalConfirm);
+    modalRef.componentInstance.title = `Empty Cart?`;
+    modalRef.componentInstance.customMessage = `Are you sure you want to empty your cart?`;
+    modalRef.result.then(
+      (result) => {
+        console.log(`Closed with: ${result}`);
+        this.productsService.deleteCart(token).subscribe({
+          next: () => {
+            this.snackBar.openFromComponent(SnackbarComponent, {
+              duration: 1000,
+              data: {
+                message: 'Cart Emptied',
+                icon: 'check_circle',
+                color: 'lightgreen',
+              },
+              panelClass: ['dismiss-snackbar'],
+            });
+            this.cartItems = [];
+            this.productsService.updateCartCount(0);
             this.updateCart();
+            this.updateTotals();
           },
           error: (error) => {
             console.log(error);
@@ -136,12 +179,48 @@ export class ShoppingcartComponent {
     );
   }
 
+
 // In ShoppingcartComponent
 onCheckout() {
+  const totalPrice = this.total;
+  const token = localStorage.getItem('token') || '';
+  const itemOrderDetails = {
+    products: this.cartItems.map((item:any) => ({
+        productId: item.product._id,
+        quantity: item.quantity,
+      })),
+    totalPrice: totalPrice,
+    status: 'pending'
+  };
   const modalRef = this.modalService.open(CheckoutModalComponent, { size: 'lg' });
   modalRef.result.then((orderDetails) => {
     if (orderDetails) {
-      this.router.navigate(['/confirmation', { orderDetails }]);
+      this.ordersService.postOrder(itemOrderDetails, token).subscribe({
+        next: () => {
+          this.snackBar.openFromComponent(SnackbarComponent, {
+            duration: 1000,
+            data: {
+              message: 'Order Placed',
+              icon: 'check_circle',
+              color: 'lightgreen',
+            },
+            panelClass: ['dismiss-snackbar'],
+          });
+          this.productsService.deleteCart(token).subscribe({
+            next: () => {
+              this.cartItems = [];
+              this.updateCart();
+              this.productsService.updateCartCount(0);
+            }
+        });
+        },
+        error: (error) => {
+          console.log(error);
+        },
+      });
+      // console.log('orderDetails', orderDetails);
+
+      this.router.navigate(['/checkout', { orderDetails }]);
     }
   });
 }
