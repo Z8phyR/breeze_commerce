@@ -5,6 +5,7 @@ import { HomeComponent } from './page/home/home.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
 import { ProductsComponent } from './page/products/products.component';
 import { ShoppingcartComponent } from './page/shoppingcart/shoppingcart.component';
+import { CheckoutComponent } from './page/checkout/checkout.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ export const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'products', component: ProductsComponent },
-    { path: 'shoppingcart', component: ShoppingcartComponent },
+  { path: 'shoppingcart', component: ShoppingcartComponent },
+  { path: 'checkout', component: CheckoutComponent },
   // { path: '**', redirectTo: 'home' }
 ];

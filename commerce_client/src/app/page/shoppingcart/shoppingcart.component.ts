@@ -11,6 +11,8 @@ import { NgbdModalConfirm } from '../../components/confirmwindow/confirmwindow.c
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { ProductDetailsService } from '../../components/product-details/product-details.service';
+import { CheckoutModalComponent } from '../../components/checkout-modal/checkout-modal.component';
+
 
 @Component({
   selector: 'app-shoppingcart',
@@ -134,9 +136,15 @@ export class ShoppingcartComponent {
     );
   }
 
-  checkOut(): void {
-    console.log('checkOut');
-  }
+// In ShoppingcartComponent
+onCheckout() {
+  const modalRef = this.modalService.open(CheckoutModalComponent, { size: 'lg' });
+  modalRef.result.then((orderDetails) => {
+    if (orderDetails) {
+      this.router.navigate(['/confirmation', { orderDetails }]);
+    }
+  });
+}
 
   changeQuantity(item: any, change: number): void {
     this.tempQuantity[item.product._id] += change;

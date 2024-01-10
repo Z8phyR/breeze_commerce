@@ -1,0 +1,94 @@
+
+        <form class="shipping-info-container">
+            <h3>Shipping Information</h3>
+            <div class="text-input name">
+                <mat-form-field>
+                    <mat-icon matSuffix>person</mat-icon>
+                    <mat-label>First Name</mat-label>
+                    <input required matInput type="text" id="firstName" name="firstName" [(ngModel)]="firstName">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-icon matSuffix>person</mat-icon>
+                    <mat-label>Last Name</mat-label>
+                    <input required matInput type="text" id="lastName" name="lastName" [(ngModel)]="lastName">
+                </mat-form-field>
+            </div>
+            <div class="text-input address">
+                <mat-form-field>
+                 <mat-icon matSuffix>home</mat-icon>
+                 <mat-label>Address Line 1</mat-label>
+                 <input required matInput type="text" id="address" name="address1" [(ngModel)]="address1">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-icon matSuffix>home</mat-icon>
+                    <mat-label>Address Line 2</mat-label>
+                    <input matInput type="text" id="address" name="address2" [(ngModel)]="address2">
+                    <mat-hint>Optional</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class="text-input address">
+                <mat-form-field>
+                    <mat-icon matSuffix>location_city</mat-icon>
+                    <mat-label>City</mat-label>
+                    <input required matInput type="text" id="city" name="city" [(ngModel)]="city">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-icon matSuffix>location_city</mat-icon>
+                    <mat-label>State</mat-label>
+                    <input required matInput type="text" id="state" name="state" [(ngModel)]="state">
+                </mat-form-field>
+            </div>
+            <div class="text-input address">
+                <mat-form-field>
+                    <mat-icon matSuffix>location_city</mat-icon>
+                    <mat-label>Zip Code</mat-label>
+                    <input required matInput type="text" id="zip" name="zip" [(ngModel)]="zip">
+                </mat-form-field>   
+                <mat-form-field>
+                    <mat-icon matSuffix>location_city</mat-icon>
+                    <mat-label>Country</mat-label>
+                    <input required matInput type="text" id="country" name="country" [(ngModel)]="country">
+                </mat-form-field>
+            </div> 
+            <h4>Delivery Method</h4>
+            <div class="text-input delivery-method">
+                <mat-radio-group required aria-label="Select an option" name="delivery" [(ngModel)]="deliveryMethod">
+                    <mat-radio-button value="standard">Standard</mat-radio-button>
+                    <mat-radio-button value="express">Express</mat-radio-button>
+                </mat-radio-group> 
+            </div>
+            <h4>Payment Method</h4>
+            <div class="text-input payment-method">
+                <mat-radio-group required aria-label="Select an option" name="payment" [(ngModel)]="payment">
+                    <mat-radio-button value="credit">Credit Card</mat-radio-button>
+                    <mat-radio-button value="paypal">Paypal</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <h4>Payment Information</h4>
+            <div class="text-input payment-info">
+                    <mat-form-field>
+                        <mat-icon matSuffix>credit_card</mat-icon>
+                        <mat-label>Card Number</mat-label>
+                    <input matInput type="text" id="cardNumber" name="cardNumber" [(ngModel)]="cardNumber">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-icon matSuffix>credit_card</mat-icon>
+                    <mat-label>Expiration Month</mat-label>
+                    <input matInput type="text" id="expirationMonth" name="expirationMonth" [(ngModel)]="expMonth">
+                </mat-form-field>
+                </div>
+                <div class="text-input">
+                <mat-form-field>
+                    <mat-icon matSuffix>credit_card</mat-icon>
+                    <mat-label>Expiration Year</mat-label>
+                    <input matInput type="text" id="expirationYear" name="expirationYear" [(ngModel)]="expYear">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-icon matSuffix>credit_card</mat-icon>
+                    <mat-label>CVV</mat-label>
+                    <input matInput type="text" id="cvv" name="cvv" [(ngModel)]="cvv">
+                </mat-form-field>
+            </div>
+
+        <button type="submit">Checkout</button>
+    </form>
