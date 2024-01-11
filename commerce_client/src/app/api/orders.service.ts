@@ -15,4 +15,8 @@ export class OrdersService {
     return this.http.post<any>(`${this.baseUrl}/orders/post`, order, { headers: header });
   }
 
+  getOrders(token: any): Observable<any> {
+    const header = { 'Authorization': `${token}` }
+    return this.http.get<any>(`${this.baseUrl}/orders`, { headers: header });
+  }
 }

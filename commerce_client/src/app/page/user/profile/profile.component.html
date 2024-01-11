@@ -4,5 +4,25 @@
             <h2>{{userProfile.username}}</h2>
             <p>{{userProfile.firstName}} {{userProfile.lastName}}</p>
             <p>{{userProfile.email}}</p>
-
+        </div>
+    </div>
+    <h2>Orders</h2>
+    <div class="orders">
+        <div class="order-details" *ngFor="let order of orders; let i = index">
+            <div class="order-header">
+                <h3>Order {{i + 1}} Details</h3>
+            </div>
+            <div class="order-items">
+                <p>{{order.name}}</p>
+                <p>Items</p>
+                <div class="order-item" *ngFor="let item of order.products">
+                    <img src="assets/{{item.details.image}}" alt="Product Image">
+                    <p>Item: {{item.details.name}}</p>
+                    <p>Price: {{item.details.price | currency}}</p>
+                    <p>Amount: {{item.quantity}}</p>
+                </div>
+                <p>Status: {{order.status}}</p>
+                <p>Total: {{order.totalPrice | currency}}</p>
+            </div>
+        </div>
     </div>

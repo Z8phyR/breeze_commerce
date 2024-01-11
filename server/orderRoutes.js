@@ -4,9 +4,13 @@ const router = express.Router();
 const { verifyToken } = require("./usersRoutes"); // Import the verifyToken function
 
 // GET all orders
-router.get('/', async (req, res) => {
+router.get('/', verifyToken , async (req, res) => {
+    const userId = req.user._id;
+
     try {
-        const orders = await Order.find();
+        // find orders that belong to the user
+        const orders = await Order.find({userId: userId});
+        // const orders = await Order.find();
         res.json(orders);
     } catch (err) {
         res.json({ message: err });

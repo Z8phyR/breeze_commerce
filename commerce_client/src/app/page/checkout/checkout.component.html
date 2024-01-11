@@ -1,5 +1,12 @@
 <h2>Congratulations on purchasing your items!</h2>
 <div class="order-details">
     <h3>Order Details</h3>
-    
+    <div class="order-items" *ngFor="let order of orders">
+        <p>{{order.name}}</p>
+        <p>{{order.price}}</p>
+        
+
+
+    </div>
 </div>
+ 
