@@ -6,23 +6,49 @@
             <p>{{userProfile.email}}</p>
         </div>
     </div>
-    <h2>Orders</h2>
+    <mat-divider></mat-divider>
+    <mat-expansion-panel hideToggle class="order-panel">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Order History
+          </mat-panel-title>
+          <mat-panel-description>
+            {{ orders.length }} orders
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
     <div class="orders">
         <div class="order-details" *ngFor="let order of orders; let i = index">
-            <div class="order-header">
-                <h3>Order {{i + 1}} Details</h3>
-            </div>
+            <mat-expansion-panel hideToggle class="order-header">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Order {{i + 1}}
+                </mat-panel-title>
+                <mat-panel-description>
+                  Order ID: {{order._id}}
+                </mat-panel-description>  
+                Status: {{order.status}}  
+              </mat-expansion-panel-header>
             <div class="order-items">
-                <p>{{order.name}}</p>
-                <p>Items</p>
-                <div class="order-item" *ngFor="let item of order.products">
-                    <img src="assets/{{item.details.image}}" alt="Product Image">
-                    <p>Item: {{item.details.name}}</p>
-                    <p>Price: {{item.details.price | currency}}</p>
-                    <p>Amount: {{item.quantity}}</p>
-                </div>
-                <p>Status: {{order.status}}</p>
-                <p>Total: {{order.totalPrice | currency}}</p>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Ordered Items
+                      </mat-panel-title>
+                      <mat-panel-description>
+                        {{ order.products.length}} items ordered
+                      </mat-panel-description>
+                      Total: {{order.totalPrice | currency}}
+                    </mat-expansion-panel-header>
+                    <div class="order-item" *ngFor="let item of order.products">
+                        <img src="assets/{{item.details.image}}" alt="Product Image">
+                        <p>Item: {{item.details.name}}</p>
+                        <p>Price: {{item.details.price | currency}}</p>
+                        <p>Amount: {{item.quantity}}</p>
+                    </div>
+                  </mat-expansion-panel>
             </div>
+            </mat-expansion-panel>
         </div>
     </div>
+    </mat-expansion-panel>

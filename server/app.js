@@ -1,7 +1,18 @@
 require('../database/connect');
 const express = require('express');
-const app = express();
 const cors = require('cors');
+const path = require('path');
+const fs = require('fs');
+const https = require('https');
+
+// Read the SSL certificate files
+const privateKey = fs.readFileSync(path.join(__dirname, 'key.pem'), 'utf8');
+const certificate = fs.readFileSync(path.join(__dirname, 'cert.pem'), 'utf8');
+
+const credentials = { key: privateKey, cert: certificate };
+const app = express();
+
+
 
 app.use(cors(
   {
@@ -32,10 +43,10 @@ app.get('/', (req, res) => {
 module.exports = app;
 
 
-
+const httpsServer = https.createServer(credentials, app);
 
 // Start the server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+httpsServer.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}...`);
 });

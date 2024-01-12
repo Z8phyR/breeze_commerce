@@ -47,7 +47,7 @@ export class RegisterComponent {
           console.log(data);
           // confirm to the user that they have registered
           confirm('You have registered successfully');
-          this.router.navigate(['/login']);
+          this.router.navigate(['login']);
         },
         error => {
           this.errormessage = true;

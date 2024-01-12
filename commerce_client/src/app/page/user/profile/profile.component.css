@@ -17,11 +17,17 @@ body {
     text-align: center;
 }
 
+.order-panel {
+    width: 50%;
+    margin: auto;
+    background-color: lightblue;
+}
+
 .orders {
-    /* width: 50%; */
+    /* width: 70%; */
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     /* align-items: center; */
@@ -31,15 +37,15 @@ body {
 }
 
 .order-details {
-    width: 30%;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     padding: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .order-details h2 {

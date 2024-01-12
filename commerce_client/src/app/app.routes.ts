@@ -16,5 +16,5 @@ export const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'shoppingcart', component: ShoppingcartComponent },
   { path: 'checkout', component: CheckoutComponent },
-  // { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: 'home' }
 ];

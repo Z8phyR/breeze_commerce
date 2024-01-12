@@ -9,10 +9,13 @@ import { forkJoin } from 'rxjs';
 import { switchMap } from 'rxjs';
 import { ProductsService } from '../../../api/products.service';
 import { of } from 'rxjs';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDividerModule} from '@angular/material/divider'
+
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [HttpClientModule, RouterModule, CommonModule],
+  imports: [HttpClientModule, RouterModule, CommonModule, MatExpansionModule, MatDividerModule],
   providers: [UsersService],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css'
@@ -30,6 +33,14 @@ export class ProfileComponent implements OnInit {
   userProfile: any = {};
   orders: any = [];
 
+  getOrderName(order: any) {
+    return order.name;
+  }
+
+  getOrderDescription(order: any) {
+    return order.description;
+  }
+
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       const token = localStorage.getItem('token') || '';
@@ -41,7 +52,7 @@ export class ProfileComponent implements OnInit {
         },
         error => {
           // redirect to login
-          this.router.navigate(['/login']);
+          this.router.navigate(['login']);
           console.log(error);
         }
       );

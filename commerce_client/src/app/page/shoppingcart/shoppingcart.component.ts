@@ -143,7 +143,7 @@ removeFromCart(product: any) {
   emptyCart() {
     const token = localStorage.getItem('token') || '';
     if (!token || token === '') {
-      this.router.navigate(['/login']);
+      this.router.navigate(['login']);
     }
 
     const modalRef = this.modalService.open(NgbdModalConfirm);
@@ -220,7 +220,7 @@ onCheckout() {
       });
       // console.log('orderDetails', orderDetails);
 
-      this.router.navigate(['/checkout', { orderDetails }]);
+      this.router.navigate(['checkout', { orderDetails }]);
     }
   });
 }
