@@ -1,0 +1,833 @@
+{
+  meta: {
+    req: {
+      url: '/cart',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        accept: '*/*',
+        'access-control-request-method': 'GET',
+        'access-control-request-headers': 'authorization',
+        origin: 'http://localhost:4200',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'OPTIONS',
+      httpVersion: '1.1',
+      originalUrl: '/cart',
+      query: {}
+    },
+    res: { statusCode: 204 },
+    responseTime: 2
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'OPTIONS /cart 204 2ms',
+  timestamp: '2024-01-13T03:12:06.871Z'
+}
+{
+  meta: {
+    req: {
+      url: '/cart',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiOGJlMDc0YmUxOTUxODJiNWY0OTEiLCJpYXQiOjE3MDUxMTUxNTIsImV4cCI6MTcwNTExODc1Mn0.EMfLudLadUHfgB9scpLNS7gJ8h6K_Vaw8u7q9yf6Ulw',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/cart',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 77
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /cart 200 77ms',
+  timestamp: '2024-01-13T03:12:06.955Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users/login',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        accept: '*/*',
+        'access-control-request-method': 'POST',
+        'access-control-request-headers': 'content-type',
+        origin: 'http://localhost:4200',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'OPTIONS',
+      httpVersion: '1.1',
+      originalUrl: '/users/login',
+      query: {}
+    },
+    res: { statusCode: 204 },
+    responseTime: 0
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'OPTIONS /users/login 204 0ms',
+  timestamp: '2024-01-13T03:12:47.923Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users/login',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'content-type': 'application/json',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 160
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'POST /users/login 200 160ms',
+  timestamp: '2024-01-13T03:12:48.085Z'
+}
+{
+  meta: {
+    req: {
+      url: '/cart',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        accept: '*/*',
+        'access-control-request-method': 'GET',
+        'access-control-request-headers': 'authorization',
+        origin: 'http://localhost:4200',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'OPTIONS',
+      httpVersion: '1.1',
+      originalUrl: '/cart',
+      query: {}
+    },
+    res: { statusCode: 204 },
+    responseTime: 0
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'OPTIONS /cart 204 0ms',
+  timestamp: '2024-01-13T03:12:49.331Z'
+}
+{
+  meta: {
+    req: {
+      url: '/cart',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiOGJlMDc0YmUxOTUxODJiNWY0OTEiLCJpYXQiOjE3MDUxMTU1NjgsImV4cCI6MTcwNTExOTE2OH0.JFPlhzjXZ0JVrUH0kxshSArPaiJ3FiBRd2gonJ-apx8',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/cart',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 62
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /cart 200 62ms',
+  timestamp: '2024-01-13T03:12:49.395Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users/profile',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        accept: '*/*',
+        'access-control-request-method': 'GET',
+        'access-control-request-headers': 'authorization',
+        origin: 'http://localhost:4200',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'OPTIONS',
+      httpVersion: '1.1',
+      originalUrl: '/users/profile',
+      query: {}
+    },
+    res: { statusCode: 204 },
+    responseTime: 0
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'OPTIONS /users/profile 204 0ms',
+  timestamp: '2024-01-13T03:13:11.180Z'
+}
+{
+  meta: {
+    req: {
+      url: '/orders',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        accept: '*/*',
+        'access-control-request-method': 'GET',
+        'access-control-request-headers': 'authorization',
+        origin: 'http://localhost:4200',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'OPTIONS',
+      httpVersion: '1.1',
+      originalUrl: '/orders',
+      query: {}
+    },
+    res: { statusCode: 204 },
+    responseTime: 0
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'OPTIONS /orders 204 0ms',
+  timestamp: '2024-01-13T03:13:11.182Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users/profile',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiOGJlMDc0YmUxOTUxODJiNWY0OTEiLCJpYXQiOjE3MDUxMTU1NjgsImV4cCI6MTcwNTExOTE2OH0.JFPlhzjXZ0JVrUH0kxshSArPaiJ3FiBRd2gonJ-apx8',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/users/profile',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 62
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /users/profile 200 62ms',
+  timestamp: '2024-01-13T03:13:11.245Z'
+}
+{
+  meta: {
+    req: {
+      url: '/orders',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiOGJlMDc0YmUxOTUxODJiNWY0OTEiLCJpYXQiOjE3MDUxMTU1NjgsImV4cCI6MTcwNTExOTE2OH0.JFPlhzjXZ0JVrUH0kxshSArPaiJ3FiBRd2gonJ-apx8',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/orders',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 67
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /orders 200 67ms',
+  timestamp: '2024-01-13T03:13:11.254Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc4',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc4',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 55
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc4 200 55ms',
+  timestamp: '2024-01-13T03:13:11.318Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc2',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 61
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 61ms',
+  timestamp: '2024-01-13T03:13:11.326Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc3',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc3',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 54
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc3 200 54ms',
+  timestamp: '2024-01-13T03:13:11.328Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc4',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc4',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 54
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc4 200 54ms',
+  timestamp: '2024-01-13T03:13:11.376Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc2',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 50
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 50ms',
+  timestamp: '2024-01-13T03:13:11.379Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc3',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc3',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 60
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc3 200 60ms',
+  timestamp: '2024-01-13T03:13:11.393Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc4',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc4',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 50
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc4 200 50ms',
+  timestamp: '2024-01-13T03:13:11.455Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc3',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc3',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 59
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc3 200 59ms',
+  timestamp: '2024-01-13T03:13:11.458Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc2',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 59
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 59ms',
+  timestamp: '2024-01-13T03:13:11.465Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc3',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc3',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 52
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc3 200 52ms',
+  timestamp: '2024-01-13T03:13:11.515Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc4',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc4',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 57
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc4 200 57ms',
+  timestamp: '2024-01-13T03:13:11.517Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc2',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 59
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 59ms',
+  timestamp: '2024-01-13T03:13:11.530Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc3',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc3',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 57
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc3 200 57ms',
+  timestamp: '2024-01-13T03:13:11.579Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc2',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 54
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 54ms',
+  timestamp: '2024-01-13T03:13:11.586Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc2',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 52
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 52ms',
+  timestamp: '2024-01-13T03:13:11.645Z'
+}
+{
+  meta: {
+    req: {
+      url: '/products/658b7ff0b3e40bec514d6dc2',
+      headers: {
+        host: 'localhost:3000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+        accept: 'application/json, text/plain, */*',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        origin: 'http://localhost:4200',
+        'sec-fetch-site': 'cross-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4200/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 53
+  },
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 53ms',
+  timestamp: '2024-01-13T03:13:11.699Z'
+}

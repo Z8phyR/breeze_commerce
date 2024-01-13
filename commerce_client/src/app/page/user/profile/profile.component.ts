@@ -33,14 +33,6 @@ export class ProfileComponent implements OnInit {
   userProfile: any = {};
   orders: any = [];
 
-  getOrderName(order: any) {
-    return order.name;
-  }
-
-  getOrderDescription(order: any) {
-    return order.description;
-  }
-
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       const token = localStorage.getItem('token') || '';
