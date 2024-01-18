@@ -15,7 +15,7 @@ interface Product {
 })
 export class ProductsService {
 
-  private baseUrl = 'https://localhost:3000';
+  private baseUrl = 'http://localhost:3000';
   // private baseUrl = 'http://72.14.189.146:3000'
   constructor(private http: HttpClient) { }
 

@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Leave a Review for {{data.product.name}}</h1>
+<div mat-dialog-content>
+    <img [src]="'/assets/' + data.product.image" alt="{{data.product.name}}" style="width: 100px; height: 100px;">
+    <p>{{data.product.description}}</p>
+    <p>Price: {{data.product.price}}</p>
+    
+    <div>
+      <hr>
+    <mat-form-field>
+        <mat-label>Review</mat-label>
+        <textarea matInput [(ngModel)]="data.userInput.reviewText" name="review"></textarea>    </mat-form-field>
+      <mat-label>Rating</mat-label>
+      <ngb-rating [(rate)]="data.userInput.rating" [max]="5"></ngb-rating>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="data" >Submit</button>
+    <button mat-button mat-dialog-close>Cancel</button>
+</div>

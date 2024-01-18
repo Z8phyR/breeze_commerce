@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { Review } = require('../database/database');
-
+const { verifyToken } = require("./usersRoutes"); // Import the verifyToken function
 // GET all reviews
 router.get('/', async (req, res) => {
     try {
@@ -13,13 +13,19 @@ router.get('/', async (req, res) => {
 });
 
 // POST a new review
-router.post('/post', async (req, res) => {
+router.post('/post', verifyToken, async (req, res) => {
+    userId = req.user._id;
+
     const review = new Review({
-        ...req.body
+        productId: req.body.productId,
+        userId: userId,
+        review: req.body.review,
+        rating: req.body.rating
     });
     
     try {
         const savedReview = await review.save();
+        console.log("SAVED REVIEW: ", savedReview);
         res.json(savedReview);
     } catch (err) {
         res.status(500).json({ message: err.message });

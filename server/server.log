@@ -1,833 +1,1384 @@
-{
-  meta: {
-    req: {
-      url: '/cart',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        accept: '*/*',
-        'access-control-request-method': 'GET',
-        'access-control-request-headers': 'authorization',
-        origin: 'http://localhost:4200',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'OPTIONS',
-      httpVersion: '1.1',
-      originalUrl: '/cart',
-      query: {}
-    },
-    res: { statusCode: 204 },
-    responseTime: 2
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'OPTIONS /cart 204 2ms',
-  timestamp: '2024-01-13T03:12:06.871Z'
-}
-{
-  meta: {
-    req: {
-      url: '/cart',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiOGJlMDc0YmUxOTUxODJiNWY0OTEiLCJpYXQiOjE3MDUxMTUxNTIsImV4cCI6MTcwNTExODc1Mn0.EMfLudLadUHfgB9scpLNS7gJ8h6K_Vaw8u7q9yf6Ulw',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/cart',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 77
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /cart 200 77ms',
-  timestamp: '2024-01-13T03:12:06.955Z'
-}
-{
-  meta: {
-    req: {
-      url: '/users/login',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        accept: '*/*',
-        'access-control-request-method': 'POST',
-        'access-control-request-headers': 'content-type',
-        origin: 'http://localhost:4200',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'OPTIONS',
-      httpVersion: '1.1',
-      originalUrl: '/users/login',
-      query: {}
-    },
-    res: { statusCode: 204 },
-    responseTime: 0
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'OPTIONS /users/login 204 0ms',
-  timestamp: '2024-01-13T03:12:47.923Z'
-}
-{
-  meta: {
-    req: {
-      url: '/users/login',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'content-length': '41',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'content-type': 'application/json',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'POST',
-      httpVersion: '1.1',
-      originalUrl: '/users/login',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 160
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'POST /users/login 200 160ms',
-  timestamp: '2024-01-13T03:12:48.085Z'
-}
-{
-  meta: {
-    req: {
-      url: '/cart',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        accept: '*/*',
-        'access-control-request-method': 'GET',
-        'access-control-request-headers': 'authorization',
-        origin: 'http://localhost:4200',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'OPTIONS',
-      httpVersion: '1.1',
-      originalUrl: '/cart',
-      query: {}
-    },
-    res: { statusCode: 204 },
-    responseTime: 0
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'OPTIONS /cart 204 0ms',
-  timestamp: '2024-01-13T03:12:49.331Z'
-}
-{
-  meta: {
-    req: {
-      url: '/cart',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiOGJlMDc0YmUxOTUxODJiNWY0OTEiLCJpYXQiOjE3MDUxMTU1NjgsImV4cCI6MTcwNTExOTE2OH0.JFPlhzjXZ0JVrUH0kxshSArPaiJ3FiBRd2gonJ-apx8',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/cart',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 62
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /cart 200 62ms',
-  timestamp: '2024-01-13T03:12:49.395Z'
-}
-{
-  meta: {
-    req: {
-      url: '/users/profile',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        accept: '*/*',
-        'access-control-request-method': 'GET',
-        'access-control-request-headers': 'authorization',
-        origin: 'http://localhost:4200',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'OPTIONS',
-      httpVersion: '1.1',
-      originalUrl: '/users/profile',
-      query: {}
-    },
-    res: { statusCode: 204 },
-    responseTime: 0
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'OPTIONS /users/profile 204 0ms',
-  timestamp: '2024-01-13T03:13:11.180Z'
-}
-{
-  meta: {
-    req: {
-      url: '/orders',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        accept: '*/*',
-        'access-control-request-method': 'GET',
-        'access-control-request-headers': 'authorization',
-        origin: 'http://localhost:4200',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'OPTIONS',
-      httpVersion: '1.1',
-      originalUrl: '/orders',
-      query: {}
-    },
-    res: { statusCode: 204 },
-    responseTime: 0
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'OPTIONS /orders 204 0ms',
-  timestamp: '2024-01-13T03:13:11.182Z'
-}
-{
-  meta: {
-    req: {
-      url: '/users/profile',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiOGJlMDc0YmUxOTUxODJiNWY0OTEiLCJpYXQiOjE3MDUxMTU1NjgsImV4cCI6MTcwNTExOTE2OH0.JFPlhzjXZ0JVrUH0kxshSArPaiJ3FiBRd2gonJ-apx8',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/users/profile',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 62
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /users/profile 200 62ms',
-  timestamp: '2024-01-13T03:13:11.245Z'
-}
-{
-  meta: {
-    req: {
-      url: '/orders',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiOGJlMDc0YmUxOTUxODJiNWY0OTEiLCJpYXQiOjE3MDUxMTU1NjgsImV4cCI6MTcwNTExOTE2OH0.JFPlhzjXZ0JVrUH0kxshSArPaiJ3FiBRd2gonJ-apx8',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/orders',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 67
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /orders 200 67ms',
-  timestamp: '2024-01-13T03:13:11.254Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc4',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc4',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 55
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc4 200 55ms',
-  timestamp: '2024-01-13T03:13:11.318Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc2',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 61
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 61ms',
-  timestamp: '2024-01-13T03:13:11.326Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc3',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc3',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 54
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc3 200 54ms',
-  timestamp: '2024-01-13T03:13:11.328Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc4',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc4',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 54
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc4 200 54ms',
-  timestamp: '2024-01-13T03:13:11.376Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc2',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 50
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 50ms',
-  timestamp: '2024-01-13T03:13:11.379Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc3',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc3',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 60
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc3 200 60ms',
-  timestamp: '2024-01-13T03:13:11.393Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc4',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc4',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 50
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc4 200 50ms',
-  timestamp: '2024-01-13T03:13:11.455Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc3',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc3',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 59
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc3 200 59ms',
-  timestamp: '2024-01-13T03:13:11.458Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc2',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 59
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 59ms',
-  timestamp: '2024-01-13T03:13:11.465Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc3',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc3',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 52
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc3 200 52ms',
-  timestamp: '2024-01-13T03:13:11.515Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc4',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc4',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 57
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc4 200 57ms',
-  timestamp: '2024-01-13T03:13:11.517Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc2',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 59
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 59ms',
-  timestamp: '2024-01-13T03:13:11.530Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc3',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc3',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 57
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc3 200 57ms',
-  timestamp: '2024-01-13T03:13:11.579Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc2',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 54
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 54ms',
-  timestamp: '2024-01-13T03:13:11.586Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc2',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 52
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 52ms',
-  timestamp: '2024-01-13T03:13:11.645Z'
-}
-{
-  meta: {
-    req: {
-      url: '/products/658b7ff0b3e40bec514d6dc2',
-      headers: {
-        host: 'localhost:3000',
-        connection: 'keep-alive',
-        'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        accept: 'application/json, text/plain, */*',
-        'sec-ch-ua-mobile': '?0',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'sec-ch-ua-platform': '"Linux"',
-        origin: 'http://localhost:4200',
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        referer: 'http://localhost:4200/',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9'
-      },
-      method: 'GET',
-      httpVersion: '1.1',
-      originalUrl: '/products/658b7ff0b3e40bec514d6dc2',
-      query: {}
-    },
-    res: { statusCode: 200 },
-    responseTime: 53
-  },
-  level: '\x1B[32minfo\x1B[39m',
-  message: 'GET /products/658b7ff0b3e40bec514d6dc2 200 53ms',
-  timestamp: '2024-01-13T03:13:11.699Z'
-}
+2024-01-18T16:21:27.962Z [info]: OPTIONS /cart 204 1ms
+2024-01-18T16:21:27.986Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T16:21:27.988Z [info]: OPTIONS /orders 204 1ms
+2024-01-18T16:21:28.025Z [info]: GET /cart 304 61ms
+2024-01-18T16:21:28.042Z [info]: GET /users/profile 304 53ms
+2024-01-18T16:21:28.054Z [info]: GET /orders 304 64ms
+2024-01-18T16:21:28.119Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T16:21:28.124Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T16:21:28.131Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T16:21:28.171Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:21:28.176Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T16:21:28.189Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T16:21:28.223Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T16:21:28.228Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T16:21:28.241Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T16:21:28.275Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:21:28.287Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T16:21:28.292Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 48ms
+2024-01-18T16:21:28.341Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T16:21:28.344Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T16:21:28.411Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 69ms
+2024-01-18T16:21:28.461Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T16:21:39.779Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T16:21:39.795Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T16:21:39.798Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T16:21:39.836Z [info]: GET /cart 304 55ms
+2024-01-18T16:21:39.854Z [info]: GET /users/profile 304 55ms
+2024-01-18T16:21:39.863Z [info]: GET /orders 304 62ms
+2024-01-18T16:21:39.939Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T16:21:39.945Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T16:21:39.947Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T16:21:39.992Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T16:21:40.004Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T16:21:40.009Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T16:21:40.055Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T16:21:40.061Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T16:21:40.068Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T16:21:40.114Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T16:21:40.119Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T16:21:40.125Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T16:21:40.173Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:21:40.179Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T16:21:40.241Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T16:21:40.322Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 76ms
+2024-01-18T16:21:42.399Z [info]: GET /cart 304 53ms
+2024-01-18T16:21:42.427Z [info]: GET /users/profile 304 54ms
+2024-01-18T16:21:42.436Z [info]: GET /orders 304 61ms
+2024-01-18T16:21:42.513Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:21:42.519Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T16:21:42.522Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T16:21:42.565Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:21:42.577Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:21:42.577Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T16:21:42.617Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:21:42.631Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T16:21:42.636Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T16:21:42.670Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:21:42.680Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 48ms
+2024-01-18T16:21:42.687Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T16:21:42.735Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:21:42.740Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T16:21:42.791Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T16:21:42.844Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T16:21:49.597Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T16:21:49.618Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T16:21:49.621Z [info]: OPTIONS /orders 204 1ms
+2024-01-18T16:21:49.663Z [info]: GET /cart 304 63ms
+2024-01-18T16:21:49.674Z [info]: GET /users/profile 304 53ms
+2024-01-18T16:21:49.683Z [info]: GET /orders 304 60ms
+2024-01-18T16:21:49.753Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T16:21:49.756Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T16:21:49.757Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T16:21:49.809Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:21:49.815Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T16:21:49.816Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T16:21:49.867Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 56ms
+2024-01-18T16:21:49.872Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T16:21:49.873Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T16:21:49.917Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 48ms
+2024-01-18T16:21:49.922Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 48ms
+2024-01-18T16:21:49.928Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T16:21:49.973Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T16:21:49.990Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T16:21:50.041Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T16:21:50.093Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T16:27:43.802Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T16:27:43.829Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T16:27:43.832Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T16:27:43.861Z [info]: GET /cart 304 57ms
+2024-01-18T16:27:43.891Z [info]: GET /users/profile 304 55ms
+2024-01-18T16:27:43.900Z [info]: GET /orders 304 62ms
+2024-01-18T16:27:43.994Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:27:44.000Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T16:27:44.003Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T16:27:44.048Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T16:27:44.054Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T16:27:44.063Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T16:27:44.104Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T16:27:44.109Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T16:27:44.121Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:27:44.158Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T16:27:44.164Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T16:27:44.175Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:27:44.216Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T16:27:44.250Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 73ms
+2024-01-18T16:27:44.273Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T16:27:44.332Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T16:27:45.439Z [info]: GET /cart 304 51ms
+2024-01-18T16:27:45.459Z [info]: GET /users/profile 304 54ms
+2024-01-18T16:27:45.464Z [info]: GET /orders 304 57ms
+2024-01-18T16:27:45.523Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:27:45.529Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T16:27:45.531Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T16:27:45.574Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:27:45.593Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T16:27:45.600Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T16:27:45.641Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 56ms
+2024-01-18T16:27:45.652Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T16:27:45.659Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T16:27:45.695Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:27:45.726Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:27:45.729Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T16:27:45.780Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:27:45.784Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T16:27:45.836Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T16:27:45.890Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T16:28:01.886Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T16:28:01.911Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T16:28:01.914Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T16:28:01.945Z [info]: GET /cart 304 56ms
+2024-01-18T16:28:01.970Z [info]: GET /users/profile 304 56ms
+2024-01-18T16:28:01.982Z [info]: GET /orders 304 66ms
+2024-01-18T16:28:02.064Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T16:28:02.070Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:28:02.072Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T16:28:02.119Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T16:28:02.124Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:28:02.133Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T16:28:02.170Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:28:02.175Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T16:28:02.198Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 64ms
+2024-01-18T16:28:02.222Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T16:28:02.228Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:28:02.253Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T16:28:02.281Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T16:28:02.307Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T16:28:02.369Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T16:28:02.452Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 82ms
+2024-01-18T16:52:21.700Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T16:52:21.704Z [info]: GET /cart 401 2ms
+2024-01-18T16:52:21.730Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T16:52:21.732Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T16:52:21.735Z [info]: GET /users/profile 401 2ms
+2024-01-18T16:52:21.738Z [info]: GET /orders 401 1ms
+2024-01-18T16:52:24.848Z [info]: GET /cart 401 2ms
+2024-01-18T16:53:06.080Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T16:53:06.083Z [info]: GET /cart 401 2ms
+2024-01-18T17:06:37.794Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:06:37.797Z [info]: GET /cart 401 1ms
+2024-01-18T17:06:42.974Z [info]: OPTIONS /users/login 204 0ms
+2024-01-18T17:06:43.101Z [info]: POST /users/login 200 125ms
+2024-01-18T17:06:44.372Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:06:44.438Z [info]: GET /cart 304 64ms
+2024-01-18T17:06:45.286Z [info]: OPTIONS /users/profile 204 1ms
+2024-01-18T17:06:45.288Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:06:45.342Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:06:45.351Z [info]: GET /orders 304 61ms
+2024-01-18T17:06:45.411Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:06:45.412Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:06:45.418Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:06:45.467Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:06:45.469Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 56ms
+2024-01-18T17:06:45.473Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:06:45.522Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:06:45.525Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:06:45.531Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:06:45.576Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:06:45.577Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:06:45.587Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:06:45.631Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:06:45.637Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 48ms
+2024-01-18T17:06:45.690Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:06:45.750Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:07:45.103Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:07:45.153Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:07:45.156Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:07:45.165Z [info]: GET /cart 304 58ms
+2024-01-18T17:07:45.219Z [info]: GET /users/profile 304 62ms
+2024-01-18T17:07:45.221Z [info]: GET /orders 304 60ms
+2024-01-18T17:07:45.292Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 56ms
+2024-01-18T17:07:45.292Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:07:45.300Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:07:45.345Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:07:45.351Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:07:45.359Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:07:45.400Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:07:45.407Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:07:45.415Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:07:45.451Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:07:45.459Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:07:45.469Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:07:45.511Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:07:45.523Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:07:45.563Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:07:45.615Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:09:07.923Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:09:07.939Z [info]: OPTIONS /users/profile 204 1ms
+2024-01-18T17:09:07.940Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:09:07.987Z [info]: GET /cart 304 57ms
+2024-01-18T17:09:08.001Z [info]: GET /users/profile 304 59ms
+2024-01-18T17:09:08.004Z [info]: GET /orders 304 59ms
+2024-01-18T17:09:08.115Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:09:08.118Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:09:08.120Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:09:08.169Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:09:08.175Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:09:08.176Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:09:08.221Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:09:08.227Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:09:08.233Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:09:08.273Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:09:08.279Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:09:08.285Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:09:08.334Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:09:08.339Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:09:08.391Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:09:08.444Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:11:30.835Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:11:30.862Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:11:30.863Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:11:30.892Z [info]: GET /cart 304 54ms
+2024-01-18T17:11:30.922Z [info]: GET /users/profile 304 53ms
+2024-01-18T17:11:30.930Z [info]: GET /orders 304 59ms
+2024-01-18T17:11:31.071Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:11:31.077Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:11:31.078Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:11:31.131Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:11:31.136Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:11:31.143Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:11:31.183Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:11:31.189Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:11:31.195Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:11:31.239Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 55ms
+2024-01-18T17:11:31.245Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:11:31.251Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:11:31.297Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:11:31.303Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:11:31.351Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:11:31.398Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 46ms
+2024-01-18T17:11:39.019Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:11:39.059Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:11:39.061Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:11:39.079Z [info]: GET /cart 304 57ms
+2024-01-18T17:11:39.129Z [info]: GET /users/profile 304 57ms
+2024-01-18T17:11:39.137Z [info]: GET /orders 304 64ms
+2024-01-18T17:11:39.285Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:11:39.291Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:11:39.292Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:11:39.355Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 55ms
+2024-01-18T17:11:39.357Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:11:39.357Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:11:39.408Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:11:39.414Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:11:39.415Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:11:39.461Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:11:39.473Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:11:39.474Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:11:39.526Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:11:39.531Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:11:39.579Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:11:39.631Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:11:45.729Z [info]: OPTIONS /cart 204 1ms
+2024-01-18T17:11:45.754Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:11:45.756Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:11:45.786Z [info]: GET /cart 304 54ms
+2024-01-18T17:11:45.815Z [info]: GET /users/profile 304 56ms
+2024-01-18T17:11:45.823Z [info]: GET /orders 304 63ms
+2024-01-18T17:11:45.925Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:11:45.930Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:11:45.931Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:11:45.977Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:11:45.989Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:11:45.990Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:11:46.029Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:11:46.040Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:11:46.047Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:11:46.079Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:11:46.090Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 48ms
+2024-01-18T17:11:46.103Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:11:46.140Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 48ms
+2024-01-18T17:11:46.156Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:11:46.208Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:11:46.259Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 48ms
+2024-01-18T17:11:57.777Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:11:57.814Z [info]: OPTIONS /users/profile 204 1ms
+2024-01-18T17:11:57.815Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:11:57.837Z [info]: GET /cart 304 58ms
+2024-01-18T17:11:57.878Z [info]: GET /users/profile 304 57ms
+2024-01-18T17:11:57.884Z [info]: GET /orders 304 61ms
+2024-01-18T17:11:57.971Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:11:57.976Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:11:57.977Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:11:58.024Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:11:58.031Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:11:58.031Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:11:58.077Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:11:58.083Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:11:58.088Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:11:58.129Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:11:58.141Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:11:58.142Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:11:58.197Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:11:58.198Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:11:58.249Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:11:58.301Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:12:07.486Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:12:07.508Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:12:07.509Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:12:07.542Z [info]: GET /cart 304 54ms
+2024-01-18T17:12:07.568Z [info]: GET /users/profile 304 53ms
+2024-01-18T17:12:07.587Z [info]: GET /orders 304 70ms
+2024-01-18T17:12:07.647Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:12:07.653Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:12:07.653Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:12:07.703Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:12:07.717Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:12:07.719Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 63ms
+2024-01-18T17:12:07.757Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:12:07.783Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:12:07.788Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:12:07.812Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:12:07.837Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:12:07.843Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:12:07.889Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:12:07.894Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:12:07.941Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:12:07.999Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:13:05.341Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:13:05.366Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:13:05.369Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:13:05.397Z [info]: GET /cart 304 55ms
+2024-01-18T17:13:05.421Z [info]: GET /users/profile 304 52ms
+2024-01-18T17:13:05.433Z [info]: GET /orders 304 60ms
+2024-01-18T17:13:05.502Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:13:05.504Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:13:05.505Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:13:05.562Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:13:05.564Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:13:05.565Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:13:05.619Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 53ms
+2024-01-18T17:13:05.624Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:13:05.625Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:13:05.670Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:13:05.682Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:13:05.683Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:13:05.738Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:13:05.739Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:13:05.790Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:13:05.843Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:24:08.777Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:24:08.796Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:24:08.798Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:24:08.829Z [info]: GET /cart 304 50ms
+2024-01-18T17:24:08.856Z [info]: GET /orders 304 55ms
+2024-01-18T17:24:08.860Z [info]: GET /users/profile 304 56ms
+2024-01-18T17:24:08.940Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:24:08.941Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:24:08.946Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:24:08.994Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:24:08.999Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 55ms
+2024-01-18T17:24:09.006Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:24:09.058Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T17:24:09.059Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T17:24:09.060Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:24:09.120Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:24:09.125Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:24:09.127Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:24:09.179Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:24:09.185Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:24:09.241Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:24:09.293Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:28:47.921Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:28:47.952Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:28:47.952Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:28:47.979Z [info]: GET /cart 304 56ms
+2024-01-18T17:28:48.012Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:28:48.020Z [info]: GET /orders 304 59ms
+2024-01-18T17:28:48.078Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:28:48.084Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:28:48.085Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:28:48.130Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:28:48.141Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:28:48.142Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:28:48.181Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:28:48.195Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:28:48.201Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:28:48.234Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:28:48.247Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:28:48.255Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:28:48.299Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:28:48.307Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:28:48.359Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:28:48.411Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:28:52.140Z [info]: GET /cart 304 55ms
+2024-01-18T17:28:52.150Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:28:52.164Z [info]: GET /orders 304 63ms
+2024-01-18T17:28:52.224Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:28:52.229Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:28:52.237Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:28:52.277Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:28:52.277Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 46ms
+2024-01-18T17:28:52.290Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:28:52.328Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 48ms
+2024-01-18T17:28:52.334Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:28:52.341Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:28:52.382Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 53ms
+2024-01-18T17:28:52.387Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:28:52.393Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:28:52.444Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:28:52.449Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:28:52.497Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:28:52.552Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:28:55.450Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:28:55.472Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:28:55.472Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:28:55.511Z [info]: GET /cart 304 56ms
+2024-01-18T17:28:55.530Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:28:55.538Z [info]: GET /orders 304 61ms
+2024-01-18T17:28:55.645Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:28:55.652Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:28:55.653Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:28:55.700Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:28:55.705Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:28:55.712Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:28:55.754Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:28:55.760Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:28:55.767Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:28:55.806Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:28:55.811Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:28:55.820Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:28:55.862Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 48ms
+2024-01-18T17:28:55.871Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:28:55.913Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:28:55.969Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:29:07.408Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:29:07.425Z [info]: OPTIONS /users/profile 204 1ms
+2024-01-18T17:29:07.429Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:29:07.471Z [info]: GET /cart 304 58ms
+2024-01-18T17:29:07.483Z [info]: GET /users/profile 304 53ms
+2024-01-18T17:29:07.492Z [info]: GET /orders 304 61ms
+2024-01-18T17:29:07.561Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:29:07.567Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:29:07.572Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:29:07.613Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:29:07.620Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:29:07.625Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:29:07.665Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:29:07.671Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:29:07.677Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:29:07.717Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:29:07.723Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:29:07.729Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:29:07.774Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:29:07.783Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:29:07.834Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:29:07.887Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:29:09.659Z [info]: GET /cart 304 55ms
+2024-01-18T17:29:09.675Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:29:09.683Z [info]: GET /orders 304 60ms
+2024-01-18T17:29:09.766Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:29:09.771Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:29:09.772Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:29:09.817Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:29:09.829Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:29:09.830Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:29:09.870Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:29:09.882Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:29:09.887Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:29:09.922Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:29:09.933Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:29:09.940Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:29:09.984Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 48ms
+2024-01-18T17:29:09.996Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:29:10.035Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:29:10.087Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:29:11.632Z [info]: GET /cart 304 52ms
+2024-01-18T17:29:11.649Z [info]: GET /users/profile 304 51ms
+2024-01-18T17:29:11.658Z [info]: GET /orders 304 59ms
+2024-01-18T17:29:11.744Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:29:11.750Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:29:11.751Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:29:11.795Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:29:11.808Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:29:11.809Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:29:11.847Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:29:11.859Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:29:11.865Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:29:11.899Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:29:11.912Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:29:11.917Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:29:11.963Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:29:11.969Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:29:12.017Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 47ms
+2024-01-18T17:29:12.070Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:29:26.041Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:29:26.058Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:29:26.060Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:29:26.104Z [info]: GET /cart 304 53ms
+2024-01-18T17:29:26.115Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:29:26.123Z [info]: GET /orders 304 61ms
+2024-01-18T17:29:26.205Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:29:26.212Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:29:26.213Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:29:26.256Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 48ms
+2024-01-18T17:29:26.268Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:29:26.269Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:29:26.308Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:29:26.320Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:29:26.325Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:29:26.359Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:29:26.371Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:29:26.377Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:29:26.423Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:29:26.429Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:29:26.479Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:29:26.529Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 48ms
+2024-01-18T17:29:31.028Z [info]: GET /cart 304 57ms
+2024-01-18T17:29:31.050Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:29:31.061Z [info]: GET /orders 304 62ms
+2024-01-18T17:29:31.123Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:29:31.130Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:29:31.131Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:29:31.182Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 56ms
+2024-01-18T17:29:31.188Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:29:31.190Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:29:31.234Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:29:31.239Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:29:31.245Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:29:31.286Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:29:31.291Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:29:31.297Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:29:31.345Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:29:31.351Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:29:31.404Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:29:31.462Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:30:07.766Z [info]: OPTIONS /cart 204 1ms
+2024-01-18T17:30:07.791Z [info]: OPTIONS /users/profile 204 1ms
+2024-01-18T17:30:07.792Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:30:07.826Z [info]: GET /cart 304 58ms
+2024-01-18T17:30:07.853Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:30:07.863Z [info]: GET /orders 304 62ms
+2024-01-18T17:30:07.952Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:30:07.953Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T17:30:07.958Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:30:08.014Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:30:08.014Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T17:30:08.015Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:30:08.067Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:30:08.073Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:30:08.079Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:30:08.123Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:30:08.129Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:30:08.136Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:30:08.184Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:30:08.190Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:30:08.239Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:30:08.292Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:30:12.471Z [info]: GET /cart 304 55ms
+2024-01-18T17:30:12.498Z [info]: GET /orders 304 64ms
+2024-01-18T17:30:12.499Z [info]: GET /users/profile 304 68ms
+2024-01-18T17:30:12.555Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:30:12.561Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:30:12.562Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:30:12.601Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 45ms
+2024-01-18T17:30:12.614Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:30:12.619Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:30:12.651Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:30:12.665Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:30:12.671Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:30:12.701Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 48ms
+2024-01-18T17:30:12.721Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:30:12.727Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:30:12.775Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:30:12.779Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:30:12.828Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 46ms
+2024-01-18T17:30:12.882Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:32:12.014Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:32:12.050Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:32:12.067Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:32:12.073Z [info]: GET /cart 304 54ms
+2024-01-18T17:32:12.130Z [info]: GET /users/profile 304 60ms
+2024-01-18T17:32:12.137Z [info]: GET /orders 304 52ms
+2024-01-18T17:32:12.216Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:32:12.221Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:32:12.229Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:32:12.267Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:32:12.279Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:32:12.286Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:32:12.321Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:32:12.332Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:32:12.344Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:32:12.373Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:32:12.386Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:32:12.395Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:32:12.441Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:32:12.447Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:32:12.500Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:32:12.549Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 48ms
+2024-01-18T17:32:54.871Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:32:54.891Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:32:54.893Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:32:54.927Z [info]: GET /cart 304 54ms
+2024-01-18T17:32:54.948Z [info]: GET /users/profile 304 55ms
+2024-01-18T17:32:54.958Z [info]: GET /orders 304 61ms
+2024-01-18T17:32:55.044Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:32:55.050Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:32:55.051Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:32:55.097Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:32:55.109Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:32:55.110Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:32:55.156Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 56ms
+2024-01-18T17:32:55.161Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:32:55.162Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:32:55.212Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:32:55.221Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:32:55.223Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:32:55.275Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:32:55.281Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:32:55.325Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:32:55.381Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:34:07.999Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:34:08.027Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:34:08.031Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:34:08.057Z [info]: GET /cart 304 54ms
+2024-01-18T17:34:08.088Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:34:08.097Z [info]: GET /orders 304 61ms
+2024-01-18T17:34:08.163Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:34:08.169Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:34:08.170Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:34:08.215Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:34:08.227Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:34:08.229Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:34:08.272Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:34:08.283Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:34:08.284Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:34:08.327Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 53ms
+2024-01-18T17:34:08.335Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:34:08.342Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:34:08.387Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:34:08.403Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:34:08.453Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 48ms
+2024-01-18T17:34:08.505Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:34:29.917Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:34:29.934Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:34:29.936Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:34:29.976Z [info]: GET /cart 304 56ms
+2024-01-18T17:34:29.992Z [info]: GET /users/profile 304 55ms
+2024-01-18T17:34:30.000Z [info]: GET /orders 304 61ms
+2024-01-18T17:34:30.069Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:34:30.074Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:34:30.075Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:34:30.124Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 53ms
+2024-01-18T17:34:30.129Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:34:30.130Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:34:30.173Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 47ms
+2024-01-18T17:34:30.186Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:34:30.187Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:34:30.223Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:34:30.242Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:34:30.244Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:34:30.299Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:34:30.300Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:34:30.348Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 46ms
+2024-01-18T17:34:30.405Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:34:39.025Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:34:39.040Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:34:39.041Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:34:39.086Z [info]: GET /cart 304 58ms
+2024-01-18T17:34:39.097Z [info]: GET /users/profile 304 53ms
+2024-01-18T17:34:39.104Z [info]: GET /orders 304 59ms
+2024-01-18T17:34:39.164Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 53ms
+2024-01-18T17:34:39.165Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:34:39.166Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:34:39.213Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 45ms
+2024-01-18T17:34:39.216Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:34:39.225Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:34:39.268Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 45ms
+2024-01-18T17:34:39.279Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:34:39.280Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T17:34:39.327Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:34:39.352Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:34:39.357Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 55ms
+2024-01-18T17:34:39.384Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:34:39.407Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:34:39.433Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 48ms
+2024-01-18T17:34:39.491Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:34:47.816Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:34:47.846Z [info]: OPTIONS /users/profile 204 1ms
+2024-01-18T17:34:47.847Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:34:47.880Z [info]: GET /cart 304 62ms
+2024-01-18T17:34:47.909Z [info]: GET /users/profile 304 58ms
+2024-01-18T17:34:47.919Z [info]: GET /orders 304 66ms
+2024-01-18T17:34:47.991Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 63ms
+2024-01-18T17:34:47.992Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 63ms
+2024-01-18T17:34:47.994Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 62ms
+2024-01-18T17:34:48.044Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 48ms
+2024-01-18T17:34:48.045Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 48ms
+2024-01-18T17:34:48.046Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:34:48.103Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:34:48.104Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:34:48.105Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:34:48.157Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:34:48.158Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:34:48.159Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:34:48.213Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:34:48.219Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:34:48.272Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:34:48.326Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:37:10.873Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:37:10.892Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:37:10.896Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:37:10.934Z [info]: GET /cart 304 53ms
+2024-01-18T17:37:10.950Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:37:10.961Z [info]: GET /orders 304 60ms
+2024-01-18T17:37:11.038Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:37:11.043Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:37:11.045Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:37:11.098Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:37:11.104Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:37:11.105Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:37:11.150Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:37:11.161Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:37:11.162Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:37:11.201Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:37:11.213Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:37:11.218Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:37:11.265Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:37:11.272Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:37:11.325Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:37:11.383Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:37:22.004Z [info]: OPTIONS /reviews/undefined 204 0ms
+2024-01-18T17:37:22.009Z [info]: POST /reviews/undefined 404 2ms
+2024-01-18T17:38:14.488Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:38:14.503Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:38:14.506Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:38:14.546Z [info]: GET /cart 304 55ms
+2024-01-18T17:38:14.562Z [info]: GET /users/profile 304 56ms
+2024-01-18T17:38:14.571Z [info]: GET /orders 304 61ms
+2024-01-18T17:38:14.649Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:38:14.656Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:38:14.657Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:38:14.709Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T17:38:14.713Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:38:14.723Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:38:14.767Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:38:14.768Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T17:38:14.779Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:38:14.821Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:38:14.834Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:38:14.836Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 64ms
+2024-01-18T17:38:14.876Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:38:14.893Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:38:14.929Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:38:14.983Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:38:16.405Z [info]: GET /cart 304 57ms
+2024-01-18T17:38:16.416Z [info]: GET /users/profile 304 52ms
+2024-01-18T17:38:16.426Z [info]: GET /orders 304 59ms
+2024-01-18T17:38:16.525Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:38:16.532Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:38:16.533Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:38:16.579Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 53ms
+2024-01-18T17:38:16.585Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:38:16.592Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:38:16.631Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:38:16.643Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:38:16.663Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 70ms
+2024-01-18T17:38:16.681Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 48ms
+2024-01-18T17:38:16.695Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:38:16.715Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:38:16.745Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:38:16.765Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:38:16.811Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 64ms
+2024-01-18T17:38:16.859Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 46ms
+2024-01-18T17:38:18.536Z [info]: GET /cart 304 54ms
+2024-01-18T17:38:18.550Z [info]: GET /users/profile 304 54ms
+2024-01-18T17:38:18.569Z [info]: GET /orders 304 70ms
+2024-01-18T17:38:18.641Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:38:18.647Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:38:18.654Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:38:18.694Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:38:18.705Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:38:18.718Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:38:18.748Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:38:18.765Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:38:18.782Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:38:18.805Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:38:18.829Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:38:18.841Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:38:18.901Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:38:18.902Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:38:18.969Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 65ms
+2024-01-18T17:38:19.024Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:38:20.286Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:38:20.304Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:38:20.313Z [info]: OPTIONS /orders 204 1ms
+2024-01-18T17:38:20.346Z [info]: GET /cart 304 51ms
+2024-01-18T17:38:20.362Z [info]: GET /users/profile 304 56ms
+2024-01-18T17:38:20.371Z [info]: GET /orders 304 54ms
+2024-01-18T17:38:20.468Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:38:20.474Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:38:20.475Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:38:20.522Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 53ms
+2024-01-18T17:38:20.530Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:38:20.533Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:38:20.585Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 53ms
+2024-01-18T17:38:20.588Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:38:20.602Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T17:38:20.636Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:38:20.641Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:38:20.660Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:38:20.691Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:38:20.711Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 48ms
+2024-01-18T17:38:20.765Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:38:20.821Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:38:21.945Z [info]: GET /cart 304 58ms
+2024-01-18T17:38:21.965Z [info]: GET /users/profile 304 55ms
+2024-01-18T17:38:21.974Z [info]: GET /orders 304 60ms
+2024-01-18T17:38:22.045Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:38:22.051Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:38:22.056Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:38:22.095Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:38:22.107Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:38:22.113Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T17:38:22.156Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 60ms
+2024-01-18T17:38:22.163Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:38:22.169Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:38:22.211Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:38:22.215Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:38:22.226Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:38:22.267Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 49ms
+2024-01-18T17:38:22.279Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:38:22.337Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:38:22.390Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:38:41.204Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:38:41.220Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:38:41.220Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:38:41.265Z [info]: GET /cart 304 59ms
+2024-01-18T17:38:41.284Z [info]: GET /users/profile 304 59ms
+2024-01-18T17:38:41.287Z [info]: GET /orders 304 59ms
+2024-01-18T17:38:41.371Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:38:41.377Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:38:41.378Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:38:41.423Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:38:41.435Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:38:41.437Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:38:41.474Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T17:38:41.488Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:38:41.493Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:38:41.526Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:38:41.544Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:38:41.549Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:38:41.603Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:38:41.603Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:38:41.655Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:38:41.707Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:38:56.449Z [info]: OPTIONS /post/ 204 1ms
+2024-01-18T17:38:56.466Z [info]: POST /post/ 404 10ms
+2024-01-18T17:39:23.481Z [info]: OPTIONS /cart 204 1ms
+2024-01-18T17:39:23.512Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:39:23.513Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:39:23.563Z [info]: GET /cart 304 73ms
+2024-01-18T17:39:23.580Z [info]: GET /orders 304 62ms
+2024-01-18T17:39:23.583Z [info]: GET /users/profile 304 68ms
+2024-01-18T17:39:23.662Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:39:23.663Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T17:39:23.672Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 63ms
+2024-01-18T17:39:23.724Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T17:39:23.725Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T17:39:23.737Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 62ms
+2024-01-18T17:39:23.781Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T17:39:23.789Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 62ms
+2024-01-18T17:39:23.797Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:39:23.834Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:39:23.853Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 62ms
+2024-01-18T17:39:23.859Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 60ms
+2024-01-18T17:39:23.891Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:39:23.920Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:39:23.950Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:39:24.002Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:39:34.732Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:39:34.753Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:39:34.754Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:39:34.790Z [info]: GET /cart 304 56ms
+2024-01-18T17:39:34.822Z [info]: GET /users/profile 304 63ms
+2024-01-18T17:39:34.830Z [info]: GET /orders 304 69ms
+2024-01-18T17:39:34.900Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:39:34.901Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 60ms
+2024-01-18T17:39:34.924Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 81ms
+2024-01-18T17:39:34.960Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T17:39:34.961Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:39:34.992Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:39:35.020Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:39:35.022Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T17:39:35.052Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:39:35.077Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:39:35.078Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:39:35.114Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:39:35.137Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:39:35.178Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T17:39:35.241Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T17:39:35.302Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T17:39:59.811Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:39:59.854Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:39:59.855Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:39:59.905Z [info]: GET /cart 304 86ms
+2024-01-18T17:39:59.927Z [info]: GET /orders 304 60ms
+2024-01-18T17:39:59.928Z [info]: GET /users/profile 304 65ms
+2024-01-18T17:39:59.986Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:39:59.997Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 63ms
+2024-01-18T17:40:00.006Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 69ms
+2024-01-18T17:40:00.037Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:40:00.057Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T17:40:00.071Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 64ms
+2024-01-18T17:40:00.090Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:40:00.116Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T17:40:00.135Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 62ms
+2024-01-18T17:40:00.143Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:40:00.177Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T17:40:00.195Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:40:00.196Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:40:00.247Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:40:00.261Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 63ms
+2024-01-18T17:40:00.324Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:40:42.656Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:40:42.690Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:40:42.691Z [info]: OPTIONS /orders 204 1ms
+2024-01-18T17:40:42.724Z [info]: GET /cart 304 63ms
+2024-01-18T17:40:42.757Z [info]: GET /users/profile 304 61ms
+2024-01-18T17:40:42.773Z [info]: GET /orders 304 73ms
+2024-01-18T17:40:42.841Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:40:42.849Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:40:42.850Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 62ms
+2024-01-18T17:40:42.894Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 50ms
+2024-01-18T17:40:42.912Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 61ms
+2024-01-18T17:40:42.913Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 61ms
+2024-01-18T17:40:42.946Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:40:42.972Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:40:42.978Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 62ms
+2024-01-18T17:40:43.004Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:40:43.037Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:40:43.044Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 63ms
+2024-01-18T17:40:43.064Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:40:43.097Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:40:43.114Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T17:40:43.170Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:40:44.668Z [info]: GET /cart 304 52ms
+2024-01-18T17:40:44.696Z [info]: GET /orders 304 60ms
+2024-01-18T17:40:44.701Z [info]: GET /users/profile 304 67ms
+2024-01-18T17:40:44.776Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T17:40:44.777Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T17:40:44.783Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 64ms
+2024-01-18T17:40:44.836Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 56ms
+2024-01-18T17:40:44.837Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 60ms
+2024-01-18T17:40:44.849Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 65ms
+2024-01-18T17:40:44.900Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:40:44.903Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 60ms
+2024-01-18T17:40:44.919Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:40:44.961Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 55ms
+2024-01-18T17:40:44.964Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:40:44.981Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:40:45.025Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:40:45.044Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T17:40:45.105Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:40:45.170Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T17:40:49.104Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:40:49.119Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:40:49.120Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:40:49.176Z [info]: GET /cart 304 69ms
+2024-01-18T17:40:49.194Z [info]: GET /orders 304 62ms
+2024-01-18T17:40:49.196Z [info]: GET /users/profile 304 65ms
+2024-01-18T17:40:49.264Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:40:49.271Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 65ms
+2024-01-18T17:40:49.272Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 63ms
+2024-01-18T17:40:49.332Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 52ms
+2024-01-18T17:40:49.333Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T17:40:49.339Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 61ms
+2024-01-18T17:40:49.393Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:40:49.395Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:40:49.407Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 63ms
+2024-01-18T17:40:49.454Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:40:49.455Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:40:49.473Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 62ms
+2024-01-18T17:40:49.518Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:40:49.519Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:40:49.578Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:40:49.639Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T17:40:50.882Z [info]: GET /cart 304 60ms
+2024-01-18T17:40:50.890Z [info]: GET /users/profile 304 53ms
+2024-01-18T17:40:50.905Z [info]: GET /orders 304 65ms
+2024-01-18T17:40:51.004Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:40:51.005Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T17:40:51.017Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 64ms
+2024-01-18T17:40:51.064Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T17:40:51.071Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 66ms
+2024-01-18T17:40:51.084Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 64ms
+2024-01-18T17:40:51.124Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T17:40:51.137Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 65ms
+2024-01-18T17:40:51.143Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:40:51.180Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 53ms
+2024-01-18T17:40:51.196Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:40:51.203Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:40:51.254Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:40:51.261Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:40:51.314Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:40:51.377Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T17:40:53.165Z [info]: GET /cart 304 60ms
+2024-01-18T17:40:53.179Z [info]: GET /users/profile 304 57ms
+2024-01-18T17:40:53.183Z [info]: GET /orders 304 62ms
+2024-01-18T17:40:53.251Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T17:40:53.264Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 61ms
+2024-01-18T17:40:53.266Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 63ms
+2024-01-18T17:40:53.303Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:40:53.328Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T17:40:53.329Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 63ms
+2024-01-18T17:40:53.355Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:40:53.390Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:40:53.392Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T17:40:53.409Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:40:53.451Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:40:53.456Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T17:40:53.511Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:40:53.516Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:40:53.575Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:40:53.634Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:40:55.745Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:40:55.779Z [info]: OPTIONS /users/profile 204 1ms
+2024-01-18T17:40:55.780Z [info]: OPTIONS /orders 204 1ms
+2024-01-18T17:40:55.812Z [info]: GET /cart 304 64ms
+2024-01-18T17:40:55.846Z [info]: GET /orders 304 57ms
+2024-01-18T17:40:55.850Z [info]: GET /users/profile 304 63ms
+2024-01-18T17:40:55.960Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T17:40:55.962Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 63ms
+2024-01-18T17:40:55.963Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 61ms
+2024-01-18T17:40:56.022Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:40:56.023Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:40:56.024Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T17:40:56.079Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:40:56.080Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:40:56.087Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 63ms
+2024-01-18T17:40:56.137Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:40:56.138Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T17:40:56.151Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 62ms
+2024-01-18T17:40:56.199Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:40:56.211Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:40:56.259Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:40:56.319Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:42:37.179Z [info]: OPTIONS /cart 204 1ms
+2024-01-18T17:42:37.206Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:42:37.208Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:42:37.264Z [info]: GET /cart 304 67ms
+2024-01-18T17:42:37.273Z [info]: GET /orders 304 63ms
+2024-01-18T17:42:37.275Z [info]: GET /users/profile 304 67ms
+2024-01-18T17:42:37.439Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:42:37.441Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T17:42:37.447Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:42:37.494Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T17:42:37.501Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:42:37.513Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 63ms
+2024-01-18T17:42:37.548Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:42:37.561Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:42:37.572Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:42:37.596Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 46ms
+2024-01-18T17:42:37.622Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:42:37.635Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:42:37.690Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 67ms
+2024-01-18T17:42:37.694Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:42:37.750Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:42:37.811Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T17:42:39.012Z [info]: GET /cart 304 61ms
+2024-01-18T17:42:39.036Z [info]: GET /orders 304 68ms
+2024-01-18T17:42:39.038Z [info]: GET /users/profile 304 72ms
+2024-01-18T17:42:39.150Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T17:42:39.151Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T17:42:39.157Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 60ms
+2024-01-18T17:42:39.209Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 56ms
+2024-01-18T17:42:39.210Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:42:39.223Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 63ms
+2024-01-18T17:42:39.265Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 52ms
+2024-01-18T17:42:39.272Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 61ms
+2024-01-18T17:42:39.283Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:42:39.323Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:42:39.336Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 62ms
+2024-01-18T17:42:39.343Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:42:39.376Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:42:39.411Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 63ms
+2024-01-18T17:42:39.433Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:42:39.485Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T17:43:10.410Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:43:10.427Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:43:10.428Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:43:10.465Z [info]: GET /cart 304 52ms
+2024-01-18T17:43:10.494Z [info]: GET /users/profile 304 62ms
+2024-01-18T17:43:10.498Z [info]: GET /orders 304 65ms
+2024-01-18T17:43:10.570Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T17:43:10.571Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 62ms
+2024-01-18T17:43:10.576Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 64ms
+2024-01-18T17:43:10.636Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:43:10.638Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T17:43:10.642Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T17:43:10.695Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 55ms
+2024-01-18T17:43:10.697Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:43:10.703Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:43:10.756Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T17:43:10.757Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T17:43:10.762Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:43:10.817Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:43:10.822Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:43:10.882Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:43:10.942Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T17:43:16.147Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:43:16.177Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:43:16.179Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:43:16.214Z [info]: GET /cart 304 64ms
+2024-01-18T17:43:16.244Z [info]: GET /orders 304 61ms
+2024-01-18T17:43:16.245Z [info]: GET /users/profile 304 65ms
+2024-01-18T17:43:16.330Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:43:16.332Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 64ms
+2024-01-18T17:43:16.337Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 61ms
+2024-01-18T17:43:16.403Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T17:43:16.411Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 64ms
+2024-01-18T17:43:16.412Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 64ms
+2024-01-18T17:43:16.458Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T17:43:16.476Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T17:43:16.478Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 65ms
+2024-01-18T17:43:16.509Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 50ms
+2024-01-18T17:43:16.543Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 63ms
+2024-01-18T17:43:16.544Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 65ms
+2024-01-18T17:43:16.564Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T17:43:16.608Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T17:43:16.671Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T17:43:16.731Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:43:23.403Z [info]: OPTIONS /post 204 0ms
+2024-01-18T17:43:23.432Z [info]: POST /post 404 27ms
+2024-01-18T17:44:35.729Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T17:44:35.752Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T17:44:35.759Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T17:44:35.797Z [info]: GET /cart 304 65ms
+2024-01-18T17:44:35.820Z [info]: GET /users/profile 304 57ms
+2024-01-18T17:44:35.834Z [info]: GET /orders 304 65ms
+2024-01-18T17:44:35.910Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T17:44:35.911Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T17:44:35.917Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 62ms
+2024-01-18T17:44:35.969Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T17:44:35.970Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:44:35.983Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 64ms
+2024-01-18T17:44:36.030Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T17:44:36.031Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 60ms
+2024-01-18T17:44:36.043Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:44:36.084Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T17:44:36.090Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T17:44:36.103Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T17:44:36.151Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T17:44:36.165Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T17:44:36.211Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T17:44:36.275Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T17:44:41.785Z [info]: OPTIONS /reviews/post 204 0ms
+2024-01-18T17:44:41.875Z [info]: POST /reviews/post 200 89ms
+2024-01-18T18:45:21.914Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:45:21.920Z [info]: GET /cart 401 3ms
+2024-01-18T18:45:21.931Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T18:45:21.933Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T18:45:21.938Z [info]: GET /users/profile 401 1ms
+2024-01-18T18:45:21.947Z [info]: GET /orders 401 2ms
+2024-01-18T18:45:25.883Z [info]: OPTIONS /users/login 204 0ms
+2024-01-18T18:45:26.033Z [info]: POST /users/login 200 149ms
+2024-01-18T18:45:27.274Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:45:27.344Z [info]: GET /cart 304 67ms
+2024-01-18T18:45:29.729Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T18:45:29.732Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T18:45:29.797Z [info]: GET /users/profile 304 64ms
+2024-01-18T18:45:29.808Z [info]: GET /orders 304 72ms
+2024-01-18T18:45:29.874Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T18:45:29.876Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T18:45:29.880Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T18:45:29.930Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 54ms
+2024-01-18T18:45:29.937Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 60ms
+2024-01-18T18:45:29.943Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T18:45:29.983Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T18:45:29.998Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T18:45:30.003Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T18:45:30.037Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T18:45:30.058Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:45:30.063Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T18:45:30.118Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:45:30.124Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T18:45:30.183Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:45:30.242Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:45:37.813Z [info]: OPTIONS /reviews/post 204 0ms
+2024-01-18T18:45:37.897Z [info]: POST /reviews/post 200 82ms
+2024-01-18T18:46:10.754Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:46:10.772Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T18:46:10.773Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T18:46:10.820Z [info]: GET /cart 304 63ms
+2024-01-18T18:46:10.838Z [info]: GET /orders 304 60ms
+2024-01-18T18:46:10.840Z [info]: GET /users/profile 304 65ms
+2024-01-18T18:46:10.932Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T18:46:10.933Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T18:46:10.939Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 60ms
+2024-01-18T18:46:10.988Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T18:46:10.995Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 54ms
+2024-01-18T18:46:10.996Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T18:46:11.040Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 49ms
+2024-01-18T18:46:11.055Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:46:11.061Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 63ms
+2024-01-18T18:46:11.088Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 47ms
+2024-01-18T18:46:11.115Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:46:11.121Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:46:11.175Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 53ms
+2024-01-18T18:46:11.176Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T18:46:11.236Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:46:11.299Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T18:46:18.949Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:46:18.985Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T18:46:18.986Z [info]: OPTIONS /orders 204 1ms
+2024-01-18T18:46:19.036Z [info]: GET /cart 304 69ms
+2024-01-18T18:46:19.053Z [info]: GET /orders 304 60ms
+2024-01-18T18:46:19.055Z [info]: GET /users/profile 304 64ms
+2024-01-18T18:46:19.119Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 54ms
+2024-01-18T18:46:19.120Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T18:46:19.125Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 60ms
+2024-01-18T18:46:19.180Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 51ms
+2024-01-18T18:46:19.181Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:46:19.187Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 61ms
+2024-01-18T18:46:19.238Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T18:46:19.239Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T18:46:19.252Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 62ms
+2024-01-18T18:46:19.296Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 55ms
+2024-01-18T18:46:19.299Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T18:46:19.312Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T18:46:19.356Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T18:46:19.360Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:46:19.417Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T18:46:19.479Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:46:23.543Z [info]: GET /cart 304 62ms
+2024-01-18T18:46:23.559Z [info]: GET /users/profile 304 59ms
+2024-01-18T18:46:23.572Z [info]: GET /orders 304 69ms
+2024-01-18T18:46:23.654Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 55ms
+2024-01-18T18:46:23.655Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T18:46:23.661Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 61ms
+2024-01-18T18:46:23.714Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T18:46:23.717Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T18:46:23.721Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:46:23.766Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T18:46:23.780Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T18:46:23.786Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 64ms
+2024-01-18T18:46:23.820Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 52ms
+2024-01-18T18:46:23.842Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:46:23.846Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:46:23.902Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T18:46:23.907Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 60ms
+2024-01-18T18:46:23.962Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:46:24.021Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T18:46:25.778Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:46:25.804Z [info]: OPTIONS /users/profile 204 1ms
+2024-01-18T18:46:25.806Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T18:46:25.841Z [info]: GET /cart 304 60ms
+2024-01-18T18:46:25.873Z [info]: GET /orders 304 62ms
+2024-01-18T18:46:25.874Z [info]: GET /users/profile 304 66ms
+2024-01-18T18:46:25.994Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T18:46:25.995Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T18:46:26.008Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 63ms
+2024-01-18T18:46:26.054Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T18:46:26.062Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 62ms
+2024-01-18T18:46:26.074Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 63ms
+2024-01-18T18:46:26.106Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T18:46:26.121Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T18:46:26.135Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:46:26.160Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T18:46:26.179Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:46:26.193Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T18:46:26.241Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T18:46:26.253Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:46:26.301Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T18:46:26.359Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T18:46:35.854Z [info]: OPTIONS /reviews/post 204 0ms
+2024-01-18T18:46:35.924Z [info]: POST /reviews/post 200 69ms
+2024-01-18T18:48:19.632Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:48:19.650Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T18:48:19.652Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T18:48:19.696Z [info]: GET /cart 304 61ms
+2024-01-18T18:48:19.716Z [info]: GET /orders 304 60ms
+2024-01-18T18:48:19.718Z [info]: GET /users/profile 304 63ms
+2024-01-18T18:48:19.799Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:48:19.803Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 60ms
+2024-01-18T18:48:19.804Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 65ms
+2024-01-18T18:48:19.850Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T18:48:19.869Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 63ms
+2024-01-18T18:48:19.870Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 65ms
+2024-01-18T18:48:19.902Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T18:48:19.932Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T18:48:19.936Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 62ms
+2024-01-18T18:48:19.968Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 64ms
+2024-01-18T18:48:19.991Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T18:48:19.996Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:48:20.020Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T18:48:20.056Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T18:48:20.072Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 51ms
+2024-01-18T18:48:20.126Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 49ms
+2024-01-18T18:49:14.941Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:49:14.962Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T18:49:14.963Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T18:49:14.999Z [info]: GET /cart 304 54ms
+2024-01-18T18:49:15.027Z [info]: GET /users/profile 304 60ms
+2024-01-18T18:49:15.038Z [info]: GET /orders 304 68ms
+2024-01-18T18:49:15.107Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T18:49:15.112Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T18:49:15.113Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T18:49:15.167Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 58ms
+2024-01-18T18:49:15.171Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 56ms
+2024-01-18T18:49:15.173Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:49:15.226Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 57ms
+2024-01-18T18:49:15.232Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T18:49:15.233Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T18:49:15.291Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 53ms
+2024-01-18T18:49:15.292Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 56ms
+2024-01-18T18:49:15.299Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 61ms
+2024-01-18T18:49:15.351Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:49:15.358Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:49:15.426Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 66ms
+2024-01-18T18:49:15.485Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T18:49:23.801Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:49:23.866Z [info]: GET /cart 304 63ms
+2024-01-18T18:49:35.491Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:49:35.555Z [info]: GET /cart 304 61ms
+2024-01-18T18:50:43.281Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:50:43.345Z [info]: GET /cart 304 62ms
+2024-01-18T18:50:53.390Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:50:53.456Z [info]: GET /cart 304 63ms
+2024-01-18T18:51:08.584Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:51:08.651Z [info]: GET /cart 304 63ms
+2024-01-18T18:51:10.410Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T18:51:10.412Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T18:51:10.473Z [info]: GET /users/profile 304 61ms
+2024-01-18T18:51:10.482Z [info]: GET /orders 304 67ms
+2024-01-18T18:51:10.556Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 56ms
+2024-01-18T18:51:10.558Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 59ms
+2024-01-18T18:51:10.563Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 64ms
+2024-01-18T18:51:10.612Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T18:51:10.619Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T18:51:10.626Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T18:51:10.664Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 50ms
+2024-01-18T18:51:10.679Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 59ms
+2024-01-18T18:51:10.688Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 60ms
+2024-01-18T18:51:10.716Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 51ms
+2024-01-18T18:51:10.739Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 58ms
+2024-01-18T18:51:10.747Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 58ms
+2024-01-18T18:51:10.799Z [info]: GET /products/658b7ff0b3e40bec514d6dc3 304 57ms
+2024-01-18T18:51:10.805Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:51:10.865Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 57ms
+2024-01-18T18:51:10.925Z [info]: GET /products/658b7ff0b3e40bec514d6dc2 304 59ms
+2024-01-18T18:51:31.880Z [info]: OPTIONS /reviews/post 204 0ms
+2024-01-18T18:51:31.960Z [info]: POST /reviews/post 200 78ms
+2024-01-18T18:52:57.563Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:52:57.627Z [info]: GET /cart 304 62ms
+2024-01-18T18:52:57.693Z [info]: GET /products/658b7ff0b3e40bec514d6dc4 304 60ms
+2024-01-18T18:53:00.421Z [info]: OPTIONS /cart/delete/658b7ff0b3e40bec514d6dc4 204 0ms
+2024-01-18T18:53:00.554Z [info]: DELETE /cart/delete/658b7ff0b3e40bec514d6dc4 200 131ms
+2024-01-18T18:53:00.624Z [info]: GET /cart 200 60ms
+2024-01-18T18:53:03.164Z [info]: GET /products 200 65ms
+2024-01-18T18:53:32.102Z [info]: OPTIONS /users/login 204 0ms
+2024-01-18T18:53:32.234Z [info]: POST /users/login 400 131ms
+2024-01-18T18:53:35.077Z [info]: POST /users/login 400 137ms
+2024-01-18T18:53:39.442Z [info]: OPTIONS /users/login 204 0ms
+2024-01-18T18:53:39.581Z [info]: POST /users/login 200 137ms
+2024-01-18T18:53:40.819Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:53:40.879Z [info]: GET /cart 304 58ms
+2024-01-18T18:53:42.169Z [info]: OPTIONS /users/profile 204 0ms
+2024-01-18T18:53:42.172Z [info]: OPTIONS /orders 204 0ms
+2024-01-18T18:53:42.233Z [info]: GET /orders 200 58ms
+2024-01-18T18:53:42.239Z [info]: GET /users/profile 200 67ms
+2024-01-18T18:53:50.220Z [info]: OPTIONS /users/login 204 0ms
+2024-01-18T18:53:50.353Z [info]: POST /users/login 200 131ms
+2024-01-18T18:53:51.590Z [info]: OPTIONS /cart 204 0ms
+2024-01-18T18:53:51.652Z [info]: GET /cart 304 59ms

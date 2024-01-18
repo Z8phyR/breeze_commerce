@@ -45,6 +45,7 @@
                         <p>Item: {{item.details.name}}</p>
                         <p>Price: {{item.details.price | currency}}</p>
                         <p>Amount: {{item.quantity}}</p>
+                        <button mat-raised-button color="primary" (click)="reviewOrder(item)">Leave a Review</button>
                     </div>
                   </mat-expansion-panel>
             </div>

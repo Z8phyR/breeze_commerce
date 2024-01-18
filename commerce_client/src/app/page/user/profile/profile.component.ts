@@ -11,12 +11,14 @@ import { ProductsService } from '../../../api/products.service';
 import { of } from 'rxjs';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDividerModule} from '@angular/material/divider'
+import { ReviewModalService } from '../../../components/review-modal/review-modal.service';
+
 
 @Component({
   selector: 'app-profile',
   standalone: true,
   imports: [HttpClientModule, RouterModule, CommonModule, MatExpansionModule, MatDividerModule],
-  providers: [UsersService],
+  providers: [],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css'
 })
@@ -27,7 +29,8 @@ export class ProfileComponent implements OnInit {
     private router: Router,
     @Inject(PLATFORM_ID) private platformId: Object,
     private ordersService: OrdersService,
-    private productsService: ProductsService
+    private productsService: ProductsService,
+    public reviewModalService: ReviewModalService
   ) { }
 
   userProfile: any = {};
@@ -48,7 +51,7 @@ export class ProfileComponent implements OnInit {
           console.log(error);
         }
       );
-
+        
       this.ordersService.getOrders(token).pipe(
         switchMap(orders => {
           return forkJoin(
@@ -82,4 +85,11 @@ export class ProfileComponent implements OnInit {
       );
     }
   }
+
+  reviewOrder(productId: any) {
+    console.log('Review product: ', productId);
+    this.reviewModalService.openDialog(productId);
+
+  }
+
 }
