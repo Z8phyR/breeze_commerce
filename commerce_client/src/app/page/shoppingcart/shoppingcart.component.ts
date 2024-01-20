@@ -126,7 +126,7 @@ removeFromCart(product: any) {
               panelClass: ['dismiss-snackbar'],
             });
             this.cartItems = [];
-            this.updateCart(); // Assuming this updates the navbar
+            this.updateCart(); 
           });
         },
         error: (error) => {
